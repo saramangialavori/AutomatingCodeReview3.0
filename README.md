@@ -21,7 +21,7 @@ The code is split as follows:
 - The folder `utils` contains useful resources used when cleaning the data or adding contextual information to the instances
 - `requirements.txt` lists the Python packages needed to run our code
 
-At this [link]() you can find extra materials that are needed to fully replicate our experiments:
+At this [link](https://zenodo.org/record/6609052#.YpneBi8Rpc9) you can find extra materials that are needed to fully replicate our experiments:
 
 - `datasets.zip` contains all the processed and split datasets we used
 	- replication
