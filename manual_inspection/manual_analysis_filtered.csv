@@ -1,0 +1,1145 @@
+discussion_link,comment,merged,method_signature,filename,link commit after,comment_ok,comment_found,change_ok,can be identified as accepted,how to exclude,notes
+https://github.com/jenkinsci/throttle-concurrent-builds-plugin/pull/32,BTW class cast to Job should not be required here,TRUE,getThrottleJobProperty,src/main/java/hudson/plugins/throttleconcurrents/ThrottleQueueTaskDispatcher.java,https://github.com/jenkinsci/throttle-concurrent-builds-plugin/commit/f8839940f89ace09b6cf364f5c2f5866dbe89ccb,yes,,yes,,,
+https://github.com/mediathekview/MediathekView/pull/495,What is your used operating system? Applying this change causes a NPE during runtime and use of the program on macOS. That was the original reason why it is inside the block.,TRUE,setupToolBar,src/main/java/mediathek/gui/abo/ManageAboPanel.java,https://github.com/mediathekview/MediathekView/commit/e93294459ab0b56c08ff4b7b98f0a0b7c5952683,yes,,yes,,,
+,This change doesn´t have any benefit as it won´t make the field bigger. It will be using the PREF size not the MAX size.,TRUE,JFXSearchPanel,src/main/java/mediathek/javafx/filterpanel/JFXSearchPanel.java,https://github.com/mediathekview/MediathekView/commit/e93294459ab0b56c08ff4b7b98f0a0b7c5952683,yes,,yes,,,
+https://github.com/eclipse/buildship/pull/551,"Externalize string, like in the other actions.",TRUE,NoActionsAvailableAction,org.eclipse.buildship.ui/src/main/java/org/eclipse/buildship/ui/view/NoActionsAvailableAction.java,https://github.com/eclipse/buildship/commit/ff13708eff42eaf084d71d1acb41aa939e4015df,yes,,yes,,,
+,"For readability, `getPageControl().getViewer()` should be extracted to local variable.",TRUE,registerListeners,org.eclipse.buildship.ui/src/main/java/org/eclipse/buildship/ui/view/execution/ExecutionPage.java,https://github.com/eclipse/buildship/commit/ff13708eff42eaf084d71d1acb41aa939e4015df,yes,,yes,,,
+https://github.com/opentok/opentok-android-sdk-samples/pull/124,We could create a new ChatMessage with messageData and remote,TRUE,showMessage,Signaling/app/src/main/java/com/tokbox/android/tutorials/signaling/MainActivity.java,https://github.com/opentok/opentok-android-sdk-samples/commit/c4625f9b52932c443377e223bf9cabf4302d3249,yes,,yes,,,
+https://github.com/spring-projects/spring-data-cassandra/pull/56,"`assertThat(imd != null ? imd.getName() : null, is(equalTo(expected.getName())));`",TRUE,assertIndex,spring-cql/src/test/java/org/springframework/cassandra/test/integration/core/cql/generator/CqlIndexSpecificationAssertions.java,https://github.com/spring-projects/spring-data-cassandra/commit/4fbce8e30542d1b486ed5f76fdcaf95c26e2b3e2,,no,,,,
+,`imd` -> `indexMetadata`,TRUE,assertIndex,spring-cql/src/test/java/org/springframework/cassandra/test/integration/core/cql/generator/CqlIndexSpecificationAssertions.java,https://github.com/spring-projects/spring-data-cassandra/commit/4fbce8e30542d1b486ed5f76fdcaf95c26e2b3e2,,no,,,,
+,`imd` -> `indexMetadata`,TRUE,assertNoIndex,spring-cql/src/test/java/org/springframework/cassandra/test/integration/core/cql/generator/CqlIndexSpecificationAssertions.java,https://github.com/spring-projects/spring-data-cassandra/commit/4fbce8e30542d1b486ed5f76fdcaf95c26e2b3e2,,no,,,,
+,"Can also be simplified to...
+ 
+ `if (Name.TUPLE.equals(type.getName()) {`
+ 
+ A properly coded `equals` method handles the `null` case with...
+ 
+ ```
+ if (!(obj instanceof Type)) {
+  return false;
+ }
+ ```",TRUE,get,spring-data-cassandra/src/main/java/org/springframework/data/cassandra/convert/ColumnReader.java,https://github.com/spring-projects/spring-data-cassandra/commit/4fbce8e30542d1b486ed5f76fdcaf95c26e2b3e2,,no,,,,
+,See line 82.,TRUE,get,spring-data-cassandra/src/main/java/org/springframework/data/cassandra/convert/ColumnReader.java,https://github.com/spring-projects/spring-data-cassandra/commit/4fbce8e30542d1b486ed5f76fdcaf95c26e2b3e2,,no,,,,
+https://github.com/MyriadAndroidODC/eOrder/pull/56,"why do you need such an array, which just includes 1, 2, 3, 4, 5...?",FALSE,initUI,src/com/androidodc/eorder/ui/SelectTableActivity.java,https://github.com/MyriadAndroidODC/eOrder/commit/27bd03f40f50e6d89f8756d38d2b7207fd88c854,yes,https://github.com/MyriadAndroidODC/eOrder/pull/56/files/3d557de1812f99dff50a6cd0440a7d6e3a2b6ea0#r18807,yes,,,
+,we're used to write it as if (!t.isFree()) .,FALSE,GridViewAdapter,src/com/androidodc/eorder/ui/SelectTableActivity.java,https://github.com/MyriadAndroidODC/eOrder/commit/27bd03f40f50e6d89f8756d38d2b7207fd88c854,yes,,yes,,,method getView in GridViewAdapter inner class
+,why setTableId again?,FALSE,initUI,src/com/androidodc/eorder/ui/SelectTableActivity.java,https://github.com/MyriadAndroidODC/eOrder/commit/27bd03f40f50e6d89f8756d38d2b7207fd88c854,yes,,yes,,,
+https://github.com/OpenMods/OpenBlocks/pull/1018,`barrelLength`,TRUE,fireStack,src/main/java/openblocks/common/tileentity/TileEntityCannon.java,https://github.com/OpenMods/OpenBlocks/commit/c1954387fccde7fdf092adcfae3b46c68f24fe10,yes,,yes,,,
+,"It was supposed to be `isDead`, then whole thing becomes more sensible.
+ 
+ 
+ 
+ Basically, purpose of this code was to let `super.onUpdate` handle all state changes, then overwrite movement with our own. Restoring just motion before update leads to numerical errors, which would cause mismatch with canon targeting algorithm (not that it was super precise in first place though).",TRUE,onUpdate,-,https://github.com/OpenMods/OpenBlocks/commit/c1954387fccde7fdf092adcfae3b46c68f24fe10,yes,,yes,,,
+https://github.com/riemann/riemann-java-client/pull/47,Might want to mutex this so we don't have a ton of threads performing the refresh simultaneously.,FALSE,refreshResolve,src/main/java/com/aphyr/riemann/client/LocalhostResolver.java,https://github.com/riemann/riemann-java-client/commit/964539ae1ab974e9ba3b8361f63cacc317ffd5ca,yes,,no,,"- discussion shows why change would not be needed
+- no mutex in code, only variable names are changed",
+,"What sort of overhead are you expecting from having this method be synchronized?
+ 
+ It seems like whatever it would be would be orders of magnitude less than doing a DNS resolution.",FALSE,refreshResolve,src/main/java/com/aphyr/riemann/client/LocalhostResolver.java,https://github.com/riemann/riemann-java-client/commit/964539ae1ab974e9ba3b8361f63cacc317ffd5ca,no,,,,discussion related to the same piece of code could be treated as a single suggestion,
+,"There are so many locks involved in doing IO that this is _really_ not gonna be a problem, haha. If you do it with double-locking and an updating volatile boolean, so one thread updates and the others just return the stale value, the impact should be really small.
+ 
+ If you do want to mix in a timer thread I'd schedule it on the Netty worker pool instead, but that's not available for all transports. Basically I want to avoid spawning threads if we don't have to; there's definitely a cost to the scheduler, and it complicates setup/teardown.",FALSE,refreshResolve,src/main/java/com/aphyr/riemann/client/LocalhostResolver.java,https://github.com/riemann/riemann-java-client/commit/964539ae1ab974e9ba3b8361f63cacc317ffd5ca,no,,,,,answer to discussion (see line 18)
+,"A few questions:
+ 1. @aphyr Are you sure you actually want to support the case that the reverse DNS lookup for the local machine the code is running on has changed? How often does that happen ? Wouldn't it just confuse the riemann user more that the same stream now has a different hostname ? Aren't we better off, with performing the lookup only once?
+ 2. @lassic Given we do want to refresh the hostname... why are we refreshing the hostname only if it is null or empty? According to aphyr's requirement on #45 the getLocalHost() should be called every time interval (assuming no env variables).
+ 3. @aphyr - Isn't it advisable for getResolvedHostname() to have predictable low latency 100% of the calls? In that respect a separate thread is a good idea since the user's (low latency) thread is never used for performing a DNS call (with unpredictable latency). As for the teardown concern for the timer thread... doesn't client.scheduler() internals already take care of the teardown?",FALSE,refreshResolve,src/main/java/com/aphyr/riemann/client/LocalhostResolver.java,https://github.com/riemann/riemann-java-client/commit/964539ae1ab974e9ba3b8361f63cacc317ffd5ca,no,,,,,answer to discussion (see line 18)
+,"1. Ideally we'd actually shell out to hostname here instead of doing the DNS lookup, but yeah, people do change hostnames and we should follow them.
+ 2. Yeah, I agree we should refresh each time.
+ 3. Eh, ideally. We do need to ensure that we do the setup/teardown of that thread appropriately, use one thread no matter how many clients are involved, etc. Right now we pay on every req so this is an improvement. :)",FALSE,refreshResolve,src/main/java/com/aphyr/riemann/client/LocalhostResolver.java,https://github.com/riemann/riemann-java-client/commit/964539ae1ab974e9ba3b8361f63cacc317ffd5ca,no,,,,,answer to discussion (see line 18)
+https://github.com/ha-jdbc/ha-jdbc/pull/103,"Can you drop the catch block? We don't want to write to System.err or System.out.
+ 
+ Let the caller handle the exception.",TRUE,dump,-,https://github.com/ha-jdbc/ha-jdbc/commit/abd5aefdb835184018eb1d1466e39b707b58fd0f,yes,,yes,,,
+,"Same. Once done, I'll merge.",TRUE,restore,core/src/main/java/net/sf/hajdbc/dialect/h2/H2Dialect.java,https://github.com/ha-jdbc/ha-jdbc/commit/abd5aefdb835184018eb1d1466e39b707b58fd0f,yes,,yes,,,
+https://github.com/steffanc/Tahoe/pull/32,THink we shold set a constant..,TRUE,zoomToUser,src/com/lake/tahoe/activities/GoogleLocationServiceActivity.java,https://github.com/steffanc/Tahoe/commit/211c6d24d3f73d2b6596cfae58583eaa5a6019af,yes,,yes,,,
+,"Change to getParseGeoPoint(""location"") so we can get rid of this casting stuff?",TRUE,getLocation,src/com/lake/tahoe/models/Request.java,https://github.com/steffanc/Tahoe/commit/211c6d24d3f73d2b6596cfae58583eaa5a6019af,yes,,yes,,,
+,Same here...one thing I've noticed is that if location == null NPE exceptions get thrown. We should probably check on null here.,TRUE,getGoogleMapsLocation,src/com/lake/tahoe/models/Request.java,https://github.com/steffanc/Tahoe/commit/211c6d24d3f73d2b6596cfae58583eaa5a6019af,yes,,yes,,,
+,wasn't this just changed to getParseGeoPoint() ?,TRUE,getGoogleMapsLocation,src/com/lake/tahoe/models/User.java,https://github.com/steffanc/Tahoe/commit/211c6d24d3f73d2b6596cfae58583eaa5a6019af,yes,,yes,,,
+,I think it's a separate helper function for converting from ParseGeoPoint to Google Maps. Still we should use the function getLocation() instead of repeating the call.,TRUE,getGoogleMapsLocation,src/com/lake/tahoe/models/User.java,https://github.com/steffanc/Tahoe/commit/211c6d24d3f73d2b6596cfae58583eaa5a6019af,yes,,yes,,,
+https://github.com/inpercima/run-and-fun/pull/84,Sounds good. Maybe you could refactor the whole for-loop into a filtered stream?,TRUE,indexActivities,src/main/java/net/inpercima/runandfun/service/RunAndFunServiceImpl.java,https://github.com/inpercima/run-and-fun/commit/636fc71b17bb09bcfa65afa1251c671f6ff2d3d5,yes,,yes,,,
+https://github.com/functionaljava/functionaljava/pull/80,"Now I have looked further down, this looks the same as my way above, but all on the one line to avoid having to specify the types.",TRUE,traverseIO,core/src/main/java/fj/data/List.java,https://github.com/functionaljava/functionaljava/commit/b304afada3cfc79d3113f332d0b106491fbce882,yes,https://github.com/functionaljava/functionaljava/pull/80/commits/a436a4ee4b5322bf1884a4c3ca633f1169466a2d#r23295766,yes,,,
+,"Method reference for success here, e.g. `map(Validation::success)` I tried this and did not need the types.
+ 
+ ```
+  return isSuccess() ? f.f(success()).map(Validation::success) : List.list(Validation.fail(e.left().value()));
+ ```",TRUE,traverseList,core/src/main/java/fj/data/Validation.java,https://github.com/functionaljava/functionaljava/commit/b304afada3cfc79d3113f332d0b106491fbce882,yes,https://github.com/functionaljava/functionaljava/pull/80/commits/387930213da7c1c983c4e014e51fce034881be94#r23296375,yes,,,
+,"Would be easier to compare lists
+ 
+ `Assert.assertArrayEquals(optStr.some(), List.list(""some1"", ""some2"", ""some3""));`
+ 
+ I didn't try this code.",TRUE,shouldTraverseListWithGivenFunction2,core/src/test/java/fj/data/List_Traverse_Tests.java,https://github.com/functionaljava/functionaljava/commit/b304afada3cfc79d3113f332d0b106491fbce882,yes,,yes,,,
+,"Hmm, I am suprised this is the case. I am using Intellij 14.0.2. Yourself?",TRUE,minus,core/src/main/java/fj/data/List.java,https://github.com/functionaljava/functionaljava/commit/b304afada3cfc79d3113f332d0b106491fbce882,no,https://github.com/functionaljava/functionaljava/pull/80/commits/387930213da7c1c983c4e014e51fce034881be94#r23297077,,,,
+,"Sorry, my mistake, I meant using `assertEquals` on two lists.",TRUE,shouldTraverseListWithGivenFunction2,core/src/test/java/fj/data/List_Traverse_Tests.java,https://github.com/functionaljava/functionaljava/commit/b304afada3cfc79d3113f332d0b106491fbce882,yes,,yes,,,
+https://github.com/mp911de/logstash-gelf/pull/197,Nit: No need for `final`.,TRUE,setDynamicMdcFieldType,src/main/java/biz/paluch/logging/gelf/GelfMessageAssembler.java,https://github.com/mp911de/logstash-gelf/commit/d8df6d5d07051d382ac99712e6685d952faa5c15,yes,,yes,,,
+,Nit: No need for `final`.,TRUE,setupDynamicMdcFieldTypes,src/main/java/biz/paluch/logging/gelf/GelfMessageAssembler.java,https://github.com/mp911de/logstash-gelf/commit/d8df6d5d07051d382ac99712e6685d952faa5c15,yes,,yes,,,
+,Nit: No need for `final`.,TRUE,setupDynamicMdcFieldTypes,src/main/java/biz/paluch/logging/gelf/GelfMessageAssembler.java,https://github.com/mp911de/logstash-gelf/commit/d8df6d5d07051d382ac99712e6685d952faa5c15,yes,,yes,,,
+,Nit: No need for `final`.,TRUE,getMatchingDynamicMdcFieldType,src/main/java/biz/paluch/logging/gelf/GelfMessageAssembler.java,https://github.com/mp911de/logstash-gelf/commit/d8df6d5d07051d382ac99712e6685d952faa5c15,yes,,yes,,,
+,Let's throw exceptions instead of returning `null` values to signal a failure. Having additional log statements is helpful.,TRUE,createField,src/main/java/biz/paluch/logging/gelf/log4j2/GelfDynamicMdcFieldType.java,https://github.com/mp911de/logstash-gelf/commit/d8df6d5d07051d382ac99712e6685d952faa5c15,yes,,yes,,,
+,Nit: No need for `final`.,TRUE,testWithNullRegex,src/main/java/biz/paluch/logging/gelf/GelfMessageAssembler.java,https://github.com/mp911de/logstash-gelf/commit/d8df6d5d07051d382ac99712e6685d952faa5c15,yes,,yes,,,
+https://github.com/pholser/junit-quickcheck/pull/197,I'd prefer you not to declare locals as `final`.,TRUE,counterexampleFound,core/src/main/java/com/pholser/junit/quickcheck/runner/PropertyFalsified.java,https://github.com/pholser/junit-quickcheck/commit/ec6672f30a0f7bf4c6afbffca9f23d41ca7f1550,yes,,yes,,,
+,Add a blank line after the arg list.,TRUE,counterexampleFound,core/src/main/java/com/pholser/junit/quickcheck/runner/PropertyFalsified.java,https://github.com/pholser/junit-quickcheck/commit/ec6672f30a0f7bf4c6afbffca9f23d41ca7f1550,yes,,yes,,,
+,Can you modify src/site/markdown/usage/seed.md to reflect the new format of the failure message?,TRUE,smallerCounterexampleFoundIsCorrectEvenIfOriginalFailureIsNotNamed,core/src/test/java/com/pholser/junit/quickcheck/runner/PropertyFalsifiedUtilityClassTest.java,https://github.com/pholser/junit-quickcheck/commit/ec6672f30a0f7bf4c6afbffca9f23d41ca7f1550,yes,,yes,,,
+,"Certainly! I find that `final`-izing local vars and method parameters introduces noise into the code, and provides a benefit that I don't find very helpful (assurance that the values in question won't change).
+ 
+ 
+ 
+ When coming into another code base that opts for marking these vars `final`, I'll gladly oblige. In junit-quickcheck and other personal projects of mine, I lean toward avoiding these declarations. I would likely lean on static analysis tools like FindBugs or Checkstyle to warn me of potentially confusing constructs where a local is getting modified a lot.",TRUE,counterexampleFound,-,https://github.com/pholser/junit-quickcheck/commit/ec6672f30a0f7bf4c6afbffca9f23d41ca7f1550,no,,,,reply to discussion (see line 42),
+https://github.com/jscep/jscep/pull/59,This isn't in the Java Standard Algorithm Names; can you consider using `DESede` instead please?,TRUE,simpleTestTripleDES,src/test/java/org/jscep/message/PkiMessageEncoderTest.java,https://github.com/jscep/jscep/commit/8c311ffe9036404c59237453d4ec68d5945130f9,yes,,yes,,,
+https://github.com/exercism/java/pull/1077,Could this just be set to `words[0]` instead of setting it to an empty string and then immediately checking if it's empty?,TRUE,recite,exercises/proverb/.meta/src/reference/java/Proverb.java,https://github.com/exercism/java/commit/301e6730490f56862fe2faaf4cc0c196546aa9e1,yes,,yes,,,
+,You could use a [`StringBuilder`](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html) instead of a string for `result`. A `StringBuilder` is more efficient when you keep appending to it in a loop :),TRUE,recite,exercises/proverb/.meta/src/reference/java/Proverb.java,https://github.com/exercism/java/commit/301e6730490f56862fe2faaf4cc0c196546aa9e1,yes,,yes,,,
+,"This should have curly brackets around it, i.e.
+ 
+ ```
+ 
+ if (i + 1 != words.length) {
+ 
+  result += ""For want of a "" + word + "" "";
+ 
+ }
+ 
+ ```
+ 
+ It's considered best practice to always put curly brackets around if statements, even when they're only one line, to prevent errors if someone tried to add another line to it. I admit errors are less likely when the body of the if is on the same line as the if statement, but I still think it's worth using curly brackets just in case :)",TRUE,recite,-,https://github.com/exercism/java/commit/301e6730490f56862fe2faaf4cc0c196546aa9e1,yes,,yes,,,
+,"This should be replaced with `throw new UnsupportedOperationException(""Delete this statement and write your own implementation."");`. We only want to provide the users with the signatures for the exercise, not any of the implementation :)",TRUE,Proverb,exercises/proverb/src/main/java/Proverb.java,https://github.com/exercism/java/commit/301e6730490f56862fe2faaf4cc0c196546aa9e1,yes,,yes,,,
+,Please put curly brackets around the body of this if :),TRUE,recite,exercises/proverb/.meta/src/reference/java/Proverb.java,https://github.com/exercism/java/commit/301e6730490f56862fe2faaf4cc0c196546aa9e1,yes,,yes,,,
+https://github.com/andrewgreenh/Learny---Server/pull/34,"Beidseitige Verbindung, richtig verwalten. Siehe Account und Subject.",TRUE,turnTest,src/main/java/de/learny/controller/TestController.java,https://github.com/andrewgreenh/Learny---Server/commit/af4190725491cab07733da374da4a1b31a29d164,,,,,,the comment is not in English
+https://github.com/chorhatarahuduketuri/gc/pull/56,p can be pendingMove.,TRUE,processTurn,app/src/main/java/dadeindustries/game/gc/mechanics/turn/TurnProcessor.java,https://github.com/chorhatarahuduketuri/gc/commit/683837c3f99385a7beadfd9bb905dad7aaebad60,yes,,yes,,,
+https://github.com/bitstadium/HockeySDK-Android/pull/421,"```suggestion
+ 
+  final AccessibilityEvent event = AccessibilityEvent.obtain(AccessibilityEvent.TYPE_ANNOUNCEMENT);
+ 
+ ```",TRUE,announceForAccessibility,-,https://github.com/bitstadium/HockeySDK-Android/commit/1950c18216be3eacc5c2fb6eb200292982c1b2c1,yes,,yes,,,
+,"```suggestion
+ 
+ ```",TRUE,announceForAccessibility,-,https://github.com/bitstadium/HockeySDK-Android/commit/1950c18216be3eacc5c2fb6eb200292982c1b2c1,yes,,yes,,,
+https://github.com/di2e/openstorefront/pull/1693,Do we need to do this every time we start the manager or is a one time thing. Does indexing a new record not index correctly? Would this break on the next index update?,FALSE,init,server/openstorefront/openstorefront-core/service/src/main/java/edu/usu/sdl/openstorefront/service/manager/ElasticSearchManager.java,https://github.com/di2e/openstorefront/commit/4f10fd842d1165b9b0f9774c95e30fd68efce014,,no,,,,page of link after commit not found
+https://github.com/square/picasso/pull/665,"I think we want to reuse the ""Paused"" verb here. ""Ignored"" makes it seem like we aren't deferring the request.",FALSE,performSubmit,picasso/src/main/java/com/squareup/picasso/Dispatcher.java,https://github.com/square/picasso/commit/15820945a0dd1f4ca7a76356fb7ad5ff82f8fe80,yes,,yes,,,
+https://github.com/wso2/developer-studio/pull/67,Why are we not simply using String.isEmpty() here for checking whether string is empty?,FALSE,createSpecificMediator,esb/org.wso2.developerstudio.eclipse.gmf.esb.diagram/src/org/wso2/developerstudio/eclipse/gmf/esb/diagram/custom/deserializer/BamMediatorExtFactory.java,https://github.com/wso2/developer-studio/commit/a3c60cb8ec118344538ad7974b4b09566fcc36fb,,no,,,,
+,Why are we catching a general Exception here?,FALSE,pageChange,esb/org.wso2.developerstudio.eclipse.gmf.esb.diagram/src/org/wso2/developerstudio/eclipse/gmf/esb/diagram/part/EsbMultiPageEditor.java,https://github.com/wso2/developer-studio/commit/a3c60cb8ec118344538ad7974b4b09566fcc36fb,,no,,,,
+,"Again, why are we throwing a general Exception?",FALSE,handleDesignViewActivatedEvent,esb/org.wso2.developerstudio.eclipse.gmf.esb.diagram/src/org/wso2/developerstudio/eclipse/gmf/esb/diagram/part/EsbMultiPageEditor.java,https://github.com/wso2/developer-studio/commit/a3c60cb8ec118344538ad7974b4b09566fcc36fb,,no,,,,
+,Catching a general Exception type is not a good practice. Is there any specific reason to catch a general Exception here?,FALSE,doSave,esb/org.wso2.developerstudio.eclipse.gmf.esb.diagram/src/org/wso2/developerstudio/eclipse/gmf/esb/diagram/part/EsbMultiPageEditor.java,https://github.com/wso2/developer-studio/commit/a3c60cb8ec118344538ad7974b4b09566fcc36fb,,no,,,,
+,Can we externalize these constants?,FALSE,createBAMMediator,esb/org.wso2.developerstudio.eclipse.gmf.esb/src/org/wso2/developerstudio/eclipse/gmf/esb/impl/EsbFactoryImpl.java,https://github.com/wso2/developer-studio/commit/a3c60cb8ec118344538ad7974b4b09566fcc36fb,,no,,,,
+,Seems above line of codes not properly formatted,FALSE,createBAMMediator,esb/org.wso2.developerstudio.eclipse.gmf.esb.persistence/src/org/wso2/developerstudio/eclipse/gmf/esb/internal/persistence/BAMMediatorTransformer.java,https://github.com/wso2/developer-studio/commit/a3c60cb8ec118344538ad7974b4b09566fcc36fb,,no,,,,
+https://github.com/asterics/AsTeRICS/pull/200,please format,TRUE,start,ARE/middleware/src/main/java/eu/asterics/mw/are/BundleManager.java,https://github.com/asterics/AsTeRICS/commit/67d65c5ad177b53f63a5f23ceb16c7e7b304e552,yes,,yes,,,
+https://github.com/uppsala-university/infoglue/pull/12,The close calls will not be executed if an exception is thrown. Shouldn't they be placed in a `finally` clause instead?,FALSE,getRepositoryVOList,src/java/org/infoglue/cms/controllers/kernel/impl/simple/RepositoryController.java,https://github.com/uppsala-university/infoglue/commit/7bc000397114aa6acce7800ff9c0aa6b2bf3aeb2,yes,,yes,,,
+,"Catching the Exception base class loses information of what might have gone wrong, when reading the code. Wouldn't it be better to handle the real types of exceptions?",FALSE,getRepositoryVOList,src/java/org/infoglue/cms/controllers/kernel/impl/simple/RepositoryController.java,https://github.com/uppsala-university/infoglue/commit/7bc000397114aa6acce7800ff9c0aa6b2bf3aeb2,yes,,no,,exception type was not changed,
+,Should the list be cached even if there was an exception and repositoryVOList is null?,FALSE,getRepositoryVOList,src/java/org/infoglue/cms/controllers/kernel/impl/simple/RepositoryController.java,https://github.com/uppsala-university/infoglue/commit/7bc000397114aa6acce7800ff9c0aa6b2bf3aeb2,yes,,yes,,,
+https://github.com/ldbc/ldbc_graphalytics/pull/103,"Are two infinite values not comparable using `==`?
+ 
+ I believe the multiplication should yield a positive number if the signs are equal (`a * b > 0`). Better yet, check the signs more explicitly (I assume this works for pos/neg infinity): `Math.signum(a) == Math.signum(b)`.",TRUE,match,graphalytics-core/src/main/java/nl/tudelft/graphalytics/validation/rule/EpsilonValidationRule.java,https://github.com/ldbc/ldbc_graphalytics/commit/78d4d3757096d5631f12905d73e0fc60afe1d559,yes,,yes,,,
+,"Minor detail: in the specs we state that `Math.abs(output - correct) < EPSILON * correct`, so the last `a` should become a `b`. Not likely to ever matter, but I would rather be consistent.",TRUE,match,graphalytics-core/src/main/java/nl/tudelft/graphalytics/validation/rule/EpsilonValidationRule.java,https://github.com/ldbc/ldbc_graphalytics/commit/78d4d3757096d5631f12905d73e0fc60afe1d559,yes,,yes,,,
+https://github.com/honeybadger-io/honeybadger-java/pull/56,This could return `null` we should handle this such that a user is left with an `NullPointerException` without an understanding of why it happened.,TRUE,submitError,honeybadger-java/src/main/java/io/honeybadger/reporter/HoneybadgerReporter.java,https://github.com/honeybadger-io/honeybadger-java/commit/965b0616d56e3145ddfcc92762f3a0167eeabcc2,yes,,no,,"- contributor's answer shows why change is not needed
+- modified code does not include NPE",
+,We should probably delete the shaded class that I was using from testing with my monitoring utility and provide a way for users to configure their own class names here.,TRUE,findExceptionContextClasses,honeybadger-java/src/main/java/io/honeybadger/reporter/HoneybadgerReporter.java,https://github.com/honeybadger-io/honeybadger-java/commit/965b0616d56e3145ddfcc92762f3a0167eeabcc2,yes,,yes,,,
+https://github.com/wso2-attic/product-dss/pull/99,Shall we log the whole exception (so that stack trace will be printed)?,TRUE,getHttpResponse,modules/integration/tests-integration/tests/src/test/java/org/wso2/dss/integration/test/requestBox/RequestBoxJsonTestCase.java,https://github.com/wso2-attic/product-dss/commit/06603c02141171c681cd17d1294347c8f8f82974,yes,,yes,,,
+https://github.com/muzima/muzima-android/pull/167,"Shouldn't we have two Toast messages, one when using SHR and another when not using SHR using if condition as ones in doInBackground",TRUE,onPostExecute,app/src/main/java/com/muzima/adapters/observations/ObservationsByEncounterBackgroundTask.java,https://github.com/muzima/muzima-android/commit/ed000c847a5b7db3cfa273a16e4c3fac05016a14,yes,https://github.com/muzima/muzima-android/pull/167/files/04ebf7d0bf60e12cfdeb94033f68c68319398b7d#r188548774,no,,instead of two messages there are none,
+,Are the values supposed to be hardcoded or are they predefined,TRUE,defineMetadataConceptsForFilters,app/src/main/java/com/muzima/model/observation/ConceptWithObservations.java,https://github.com/muzima/muzima-android/commit/ed000c847a5b7db3cfa273a16e4c3fac05016a14,yes,,yes,,,
+,Shouln't this be this.variable name. This is a Potential Null pointer Exception.,TRUE,setCardDetail,app/src/main/java/com/muzima/model/shr/kenyaemr/Addendum/Addendum.java,https://github.com/muzima/muzima-android/commit/ed000c847a5b7db3cfa273a16e4c3fac05016a14,yes,,yes,,,
+,Shouldn't this be this.variableName. This is a Potential Null pointer Exception.,TRUE,setIdentifiers,-,https://github.com/muzima/muzima-android/commit/ed000c847a5b7db3cfa273a16e4c3fac05016a14,yes,,yes,,,
+,Logging using standard output,TRUE,SyncSharedHealthRecordBackgroundTask,app/src/main/java/com/muzima/tasks/EncryptedSharedHealthRecordSyncTask.java,https://github.com/muzima/muzima-android/commit/ed000c847a5b7db3cfa273a16e4c3fac05016a14,yes,,yes,,,method onPreExecute of inner class
+,Logging using standard output,TRUE,SyncSharedHealthRecordBackgroundTask,-,https://github.com/muzima/muzima-android/commit/ed000c847a5b7db3cfa273a16e4c3fac05016a14,yes,,yes,,,method onPostExecute of inner class
+,Logging using standard output,TRUE,SyncSharedHealthRecordBackgroundTask,-,https://github.com/muzima/muzima-android/commit/ed000c847a5b7db3cfa273a16e4c3fac05016a14,yes,,yes,,,method doInBackground of inner class
+,Should the package name be a literal string,TRUE,showInstallPsmartAppDownloadDialog,app/src/main/java/com/muzima/utils/smartcard/SmartCardIntentIntegrator.java,https://github.com/muzima/muzima-android/commit/ed000c847a5b7db3cfa273a16e4c3fac05016a14,yes,,no,,commented code was not modified,
+,should the function be getSmartCardRecordByPatientUuid instead of getSmartCardRecordByPersonUuid,TRUE,invokeShrApplication,app/src/main/java/com/muzima/view/SHRObservationsDataActivity.java,https://github.com/muzima/muzima-android/commit/ed000c847a5b7db3cfa273a16e4c3fac05016a14,yes,,no,,commented code was not modified,
+https://github.com/karamelchef/karamel/pull/164,please fix whitespace,TRUE,getProvider,karamel-common/src/main/java/se/kth/karamel/common/clusterdef/Scope.java,https://github.com/karamelchef/karamel/commit/abbeb9e42fd0fcdbd32ed8b3d321f24400af9eef,yes,https://github.com/karamelchef/karamel/pull/164/commits/cee5928b20520100f5fcdd76867203352f910474#r58702683,yes,,,
+,whitespace,TRUE,validate,karamel-common/src/main/java/se/kth/karamel/common/clusterdef/Scope.java,https://github.com/karamelchef/karamel/commit/abbeb9e42fd0fcdbd32ed8b3d321f24400af9eef,yes,,yes,,,
+,whitespace,TRUE,validateContext,karamel-common/src/main/java/se/kth/karamel/common/clusterdef/Scope.java,https://github.com/karamelchef/karamel/commit/abbeb9e42fd0fcdbd32ed8b3d321f24400af9eef,yes,,yes,,,
+,whitespace,TRUE,initLaunchers,karamel-common/src/main/java/se/kth/karamel/common/clusterdef/Scope.java,https://github.com/karamelchef/karamel/commit/abbeb9e42fd0fcdbd32ed8b3d321f24400af9eef,yes,,yes,,,
+,whitespace after comma,TRUE,initLaunchers,karamel-core/src/main/java/se/kth/karamel/backend/ClusterManager.java,https://github.com/karamelchef/karamel/commit/abbeb9e42fd0fcdbd32ed8b3d321f24400af9eef,yes,https://github.com/karamelchef/karamel/pull/164/commits/0567f32061d3d31d69a47e42d76404d9ac881b45#r58703344,yes,,,
+,"I think the exception message needs a space character before the appended path
+ 
+ Maybe you should explicitly spell ""certificate"" instead of ""cert""",TRUE,validateCredentials,karamel-core/src/main/java/se/kth/karamel/backend/launcher/occi/OcciLauncher.java,https://github.com/karamelchef/karamel/commit/abbeb9e42fd0fcdbd32ed8b3d321f24400af9eef,yes,https://github.com/karamelchef/karamel/pull/164/commits/0567f32061d3d31d69a47e42d76404d9ac881b45#r58704010,yes,,,
+https://github.com/Smithsonian/sidora-services/pull/41,"Better to pass in the build directory (e.g. as a system prop) and don't use a literal slash to concatenate paths, especially after you went to the trouble of being platform-independent above. I do this sort of thing, too, but it's not good practice. Test code can be as clean as main code.",TRUE,createRouteBuilder,Components/Extractor/src/test/java/edu/si/services/camel/extractor/ExtractorComponentTest.java,https://github.com/Smithsonian/sidora-services/commit/9c280a27db69955acc8b1c2f0aa7f4dacad9949e,yes,,yes,,,
+,Why not just let the method `throws` the exception?,TRUE,afterClass,Components/Extractor/src/test/java/edu/si/services/camel/extractor/ExtractorComponentTest.java,https://github.com/Smithsonian/sidora-services/commit/9c280a27db69955acc8b1c2f0aa7f4dacad9949e,yes,,yes,,,
+,"I don't much care about how you pass it in (although the properties thing would probably read more concisely in this code)-- the important thing is to be platform-independent. If you want to stay with Commons IO, you can use `FilenameUtils::concat(java.lang.String, java.lang.String)` or if you want to use vanilla Java, use `Paths::get(java.lang.String, java.lang.String...)`. Either one will add paths together without making you use a literal for the path segment separator.",TRUE,createRouteBuilder,Components/Extractor/src/test/java/edu/si/services/camel/extractor/ExtractorComponentTest.java,https://github.com/Smithsonian/sidora-services/commit/9c280a27db69955acc8b1c2f0aa7f4dacad9949e,yes,,yes,,,related to discussion starting with comment at line 88
+,Where is `{{file.separator}}` coming from?,TRUE,createRouteBuilder,Components/Extractor/src/test/java/edu/si/services/camel/extractor/ExtractorComponentTest.java,https://github.com/Smithsonian/sidora-services/commit/9c280a27db69955acc8b1c2f0aa7f4dacad9949e,no,,,,,related to discussion starting with comment at line 88
+,I suppose that's better than a literal slash. Let's just do that and move on.,TRUE,createRouteBuilder,Components/Extractor/src/test/java/edu/si/services/camel/extractor/ExtractorComponentTest.java,https://github.com/Smithsonian/sidora-services/commit/9c280a27db69955acc8b1c2f0aa7f4dacad9949e,no,,,,,related to discussion starting with comment at line 88
+https://github.com/ceaseless-prayer/CeaselessAndroid/pull/85,separate this chunk out into a helper function,TRUE,copyContact,app/src/main/java/org/theotech/ceaselessandroid/person/PersonManagerImpl.java,https://github.com/ceaseless-prayer/CeaselessAndroid/commit/e247dc25ae2397599adf345323931a45f560620f,yes,,yes,,,
+https://github.com/ARGOeu/argo-compute-engine/pull/59,Is this yyy correct?,FALSE,fill,status-computation/java/src/main/java/ops/DTimeline.java,https://github.com/ARGOeu/argo-compute-engine/commit/2b4ea95d15c76c50cc31506f39b41bb1ddd8e601,yes,https://github.com/ARGOeu/argo-compute-engine/pull/59/files/19fc5853ddb97cc2bfc867da91d3012b263b129a#r24563998,yes,,,
+,I thought that we did not need to have this mapping in the compute engine,FALSE,getPeriod,status-computation/java/src/main/java/sync/Downtimes.java,https://github.com/ARGOeu/argo-compute-engine/commit/2b4ea95d15c76c50cc31506f39b41bb1ddd8e601,yes,,yes,,,
+,I thought that we did not need to have this mapping in the compute engine,FALSE,checkEndpoint,status-computation/java/src/main/java/sync/Downtimes.java,https://github.com/ARGOeu/argo-compute-engine/commit/2b4ea95d15c76c50cc31506f39b41bb1ddd8e601,yes,,yes,,,
+,"OK I thought that you meant ""the mapping will be removed by this pull request""",FALSE,getPeriod,status-computation/java/src/main/java/sync/Downtimes.java,https://github.com/ARGOeu/argo-compute-engine/commit/2b4ea95d15c76c50cc31506f39b41bb1ddd8e601,no,,,,,related to comment at line 95
+https://github.com/jenkinsci/docker-custom-build-environment-plugin/pull/27,Does it make sense to cache the result?,FALSE,getEnvVars,src/main/java/com/cloudbees/jenkins/plugins/docker_build_env/Docker.java,https://github.com/jenkinsci/docker-custom-build-environment-plugin/commit/a134ba6173d1f3db3e7b5702e27356a1325da07f,yes,,yes,,,
+https://github.com/xebialabs/overthere/pull/187,static imports,TRUE,CifsTelnetConnection,src/main/java/com/xebialabs/overthere/cifs/telnet/CifsTelnetConnection.java,https://github.com/xebialabs/overthere/commit/9ce337b9f56803d5b7807f0ad2a3fce9c55125e4,yes,,yes,,,issue moved to superclass
+,static imports,TRUE,CifsWinRmConnection,src/main/java/com/xebialabs/overthere/cifs/telnet/CifsTelnetConnection.java,https://github.com/xebialabs/overthere/commit/9ce337b9f56803d5b7807f0ad2a3fce9c55125e4,yes,,yes,,,issue moved to superclass
+,static imports,TRUE,CifsWinrsConnection,src/main/java/com/xebialabs/overthere/cifs/telnet/CifsTelnetConnection.java,https://github.com/xebialabs/overthere/commit/9ce337b9f56803d5b7807f0ad2a3fce9c55125e4,yes,,yes,,,issue moved to superclass
+,"Why first the connect, then the check and disconnect?",TRUE,connect,src/main/java/com/xebialabs/overthere/cifs/winrs/CifsWinrsConnection.java,https://github.com/xebialabs/overthere/commit/9ce337b9f56803d5b7807f0ad2a3fce9c55125e4,yes,,yes,,,
+,"I'll add the cache in SMBJ, as it should be there (see section 3.2.4.2 of the MS-SMB2 spec, the TreeConnectTable).
+ 
+ It will be there in 0.0.6",TRUE,getShare,src/main/java/com/xebialabs/overthere/smb/SmbConnection.java,https://github.com/xebialabs/overthere/commit/9ce337b9f56803d5b7807f0ad2a3fce9c55125e4,yes,,yes,,,
+,Can we make 1 SmbConnection that takes a ProcessConnection?,TRUE,SmbConnectionBuilder,src/main/java/com/xebialabs/overthere/smb/SmbConnectionBuilder.java,https://github.com/xebialabs/overthere/commit/9ce337b9f56803d5b7807f0ad2a3fce9c55125e4,yes,,yes,,,
+,"This will throw a ClassCastException, see the line below.",TRUE,getShare,src/main/java/com/xebialabs/overthere/smb/SmbConnection.java,https://github.com/xebialabs/overthere/commit/9ce337b9f56803d5b7807f0ad2a3fce9c55125e4,yes,,yes,,,
+,"I don't think so, you don't need an actual connection. The OperatingSystemFamily is set in the connection options. So you could get the connectionoptions being used to build the proxy connection and check those. Also what is the connection type of the WinRS proxy connection? Doesn't that one already check whether it is windows, or can it be anything?",TRUE,connect,src/main/java/com/xebialabs/overthere/cifs/winrs/CifsWinrsConnection.java,https://github.com/xebialabs/overthere/commit/9ce337b9f56803d5b7807f0ad2a3fce9c55125e4,yes,,yes,,,related to comment at line 102
+,extract a private method `delete(boolean recursive)` and reuse that with the `deleteRecursive` method below. The implementation is too similar not to.,TRUE,delete,src/main/java/com/xebialabs/overthere/smb/SmbFile.java,https://github.com/xebialabs/overthere/commit/9ce337b9f56803d5b7807f0ad2a3fce9c55125e4,yes,,yes,,,mentions code of following function in the code
+,"Hmm totally forgot, this refactoring breaks backwards compatibility. Maybe keep using the old classes for Cifs for this release and return them from the CifsConnectionBuilder.",TRUE,shouldReturnNullForParentFileOfRoot,src/test/java/com/xebialabs/overthere/cifs/CifsFileTest.java,https://github.com/xebialabs/overthere/commit/9ce337b9f56803d5b7807f0ad2a3fce9c55125e4,yes,,yes,,,
+https://github.com/kaaproject/sandbox-frame/pull/37,"This line should be moved to line 501. After:
+ 
+ ```
+ FileData sdkFileData = cacheService.getSdk(project.getId());
+ ```",TRUE,buildSdk,web/src/main/java/org/kaaproject/kaa/sandbox/web/services/SandboxServiceImpl.java,https://github.com/kaaproject/sandbox-frame/commit/a9e6d37070c0055da4f7dd9f125cdaa5cafe7075,yes,https://github.com/kaaproject/sandbox-frame/pull/37/files/acc35bb31772c6540bbee53307ebe7566d25b7da#r73857018,yes,,,
+https://github.com/Sloeber/arduino-eclipse-plugin/pull/422,This introduces an error.,TRUE,initialize,it.baeyens.arduino.core/src/it/baeyens/arduino/toolchain/ArduinoGnuMakefileGenerator.java,https://github.com/Sloeber/arduino-eclipse-plugin/commit/13fcbbfc5f583a42896ca08ff5cae5cc8cff36e9,yes,,yes,,,
+https://github.com/SmartBear/soapui/pull/264,"So if you ask for three test steps named ""Smurf"", you will get ""Smurf"", ""Smurf 1"" and ""Smurf 2"", I suppose. Shouldn't the count start at 2?",TRUE,createUniqueName,soapui-testserver-api/src/main/java/com/smartbear/ready/recipe/TestStepNames.java,https://github.com/SmartBear/soapui/commit/b0e299b3a09ec1df58927dbb72d8f1912265eb5f,yes,,yes,,,
+,Avoid abbreviations in variable names. Please use originalName and count rather than orgName and cnt.,TRUE,createUniqueName,soapui-testserver-api/src/main/java/com/smartbear/ready/recipe/TestStepNames.java,https://github.com/SmartBear/soapui/commit/b0e299b3a09ec1df58927dbb72d8f1912265eb5f,yes,,yes,,,
+,"There's some unnecessary newlines in this commit, I think. This is one of them. Think about which ones you really want to keep.",TRUE,createUniqueName,soapui-testserver-api/src/main/java/com/smartbear/ready/recipe/TestStepNames.java,https://github.com/SmartBear/soapui/commit/b0e299b3a09ec1df58927dbb72d8f1912265eb5f,yes,,yes,,,
+https://github.com/feedzai/pdb/pull/121,"Error message could be more specific: ""Is the timeout of the DB connection disabled as expected?""",TRUE,testTimeout,src/test/java/com/feedzai/commons/sql/abstraction/engine/impl/h2/H2EngineSchemaTest.java,https://github.com/feedzai/pdb/commit/d893b7d8bbe3e576b4d944c27493edec20a876c1,yes,,yes,,,
+,"Error message could be more specific: ""Is the timeout of the DB connection the expected?""",TRUE,testTimeout,src/test/java/com/feedzai/commons/sql/abstraction/engine/impl/abs/AbstractEngineSchemaTest.java,https://github.com/feedzai/pdb/commit/d893b7d8bbe3e576b4d944c27493edec20a876c1,yes,,no,,error message was removed,
+https://github.com/googlemaps/android-samples/pull/141,"```suggestion
+ 
+  mLikelyPlaceAttributions[i] = placeLikelihood.getPlace()
+ 
+ ```",TRUE,showCurrentPlace,-,https://github.com/googlemaps/android-samples/commit/9478b4f5bcd228683e56a7fe3b483f1f6f779f6d,yes,,yes,,,
+,"```suggestion
+ 
+  mLikelyPlaceAddresses[i] = placeLikelihood.getPlace().getAddress();
+ 
+ ```",TRUE,showCurrentPlace,-,https://github.com/googlemaps/android-samples/commit/9478b4f5bcd228683e56a7fe3b483f1f6f779f6d,yes,,yes,,,
+,"```suggestion
+ 
+ ```",TRUE,showCurrentPlace,-,https://github.com/googlemaps/android-samples/commit/9478b4f5bcd228683e56a7fe3b483f1f6f779f6d,yes,,yes,,,
+,"```suggestion
+ 
+  mLikelyPlaceNames[i] = placeLikelihood.getPlace().getName();
+ 
+ ```",TRUE,showCurrentPlace,-,https://github.com/googlemaps/android-samples/commit/9478b4f5bcd228683e56a7fe3b483f1f6f779f6d,yes,,yes,,,
+https://github.com/bernardosulzbach/dungeon/pull/369,"`exists` would be a more grammatically correct name. I don't have any problem understanding you, but the codebase should stay as readable as possible.",TRUE,validate,src/main/java/org/mafagafogigante/dungeon/schema/rules/SpecificIdJsonRule.java,https://github.com/bernardosulzbach/dungeon/commit/9321b002d743ccb684fab450ec71beae4de95637,yes,,yes,,,
+https://github.com/ParameterizedBuilds/parameterized-builds/pull/243,I think it would be better to treat the ignoreCommitMsg as a regex instead of just a substring. This would give users more power to check for multiple different strings within a commit message or only check a certain portion of the string (beginning or end typically).,TRUE,validateCommitMsg,src/main/java/com/kylenicholls/stash/parameterizedbuilds/eventHandlers/PushHandler.java,https://github.com/ParameterizedBuilds/parameterized-builds/commit/d0a0709b9f375ffa77698e2557f8b0bfb1240c76,yes,,yes,,,
+,"Unfortunately, Bitbucket usernames can have commas in them. In fact, usernames can contain most characters but it looks like newlines don't work. I'd recommend splitting on newlines instead.",TRUE,validateComitter,src/main/java/com/kylenicholls/stash/parameterizedbuilds/eventHandlers/PushHandler.java,https://github.com/ParameterizedBuilds/parameterized-builds/commit/d0a0709b9f375ffa77698e2557f8b0bfb1240c76,yes,,yes,,,
+,"Sorry for the delay, I've been out on vacation.
+ 
+ 
+ 
+ You'll need to add a few lines to the setup method to mock out the commit. You can create the mock using `Commit commit = mock(Commit.class);`. This creates a dummy object and to have it returned from the commitService, add a line like `when(commitService.getCommit(any())).thenReturn(commit);` to the setup too. Finally, you can do something similar to return a specific commit message: `when(commit.getMessage()).thenReturn(""my_commit_message"");`.",TRUE,setup,-,https://github.com/ParameterizedBuilds/parameterized-builds/commit/d0a0709b9f375ffa77698e2557f8b0bfb1240c76,yes,,yes,,,"related to comment ""Could you add a test or two in this file that ensures the ignore fields work with actual values?"" of same conversation"
+https://github.com/septadev/SEPTA-Android/pull/165,These should be externalized. You can store them in a text file that you read in or you can put them into the Strings values with the other SQL. But hard coding them is not a good idea.,TRUE,SEPTADatabase,app/src/main/java/org/septa/android/app/database/SEPTADatabase.java,https://github.com/septadev/SEPTA-Android/commit/e8638c760d910047f1782250e59cd1c77bfa56f1,yes,,yes,,,
+,"You can also execute them all in 1 shot if they are separated by "";""",TRUE,SEPTADatabase,app/src/main/java/org/septa/android/app/database/SEPTADatabase.java,https://github.com/septadev/SEPTA-Android/commit/e8638c760d910047f1782250e59cd1c77bfa56f1,yes,,yes,,,related to previous comment (line 124)
+https://github.com/A24Group/ssGWT-lib/pull/231,"Wouldn't it be easier to follow if you just changed this line to:
+ `(resultMonth == 3 || resultMonth == 5 || resultMonth == 8 || resultMonth == 10)`
+ 
+ as it does the same thing. It is not like the number of days in a month changes.",FALSE,addMonthsToDate,src/org/ssgwt/client/ui/datepicker/CalendarUtil.java,https://github.com/A24Group/ssGWT-lib/commit/19a0105854b553ca979ee18a0b89f18bf4dc2ca2,yes,,yes,,,
+https://github.com/k3po/k3po/pull/218,copy paste error ? o instanceof NotifyCommand and cast to NotifyCommand,TRUE,equals,control/src/main/java/org/kaazing/k3po/control/internal/command/NotifyCommand.java,https://github.com/k3po/k3po/commit/31ced21be582f95754e355587ca400e18050a09a,yes,https://github.com/k3po/k3po/pull/218/files/a3e546d9e0712b91dc603ee4392ff5632decd47d#r39428916,yes,,,
+,o instanceof NotifiedEvent ??,TRUE,equals,control/src/main/java/org/kaazing/k3po/control/internal/event/NotifiedEvent.java,https://github.com/k3po/k3po/commit/31ced21be582f95754e355587ca400e18050a09a,yes,,yes,,,
+,typo: nonexistent ??,TRUE,awaitBarrier,driver/src/main/java/org/kaazing/k3po/driver/internal/Robot.java,https://github.com/k3po/k3po/commit/31ced21be582f95754e355587ca400e18050a09a,yes,,yes,,,
+,obj instanceof AwaitMessage ?? also equalsTo((AwaitMessage) obj),TRUE,equals,driver/src/main/java/org/kaazing/k3po/driver/internal/control/AwaitMessage.java,https://github.com/k3po/k3po/commit/31ced21be582f95754e355587ca400e18050a09a,yes,,yes,,,
+,"Same feedback as other classes. check equals(), equalTo() methods in the changeset",TRUE,equals,driver/src/main/java/org/kaazing/k3po/driver/internal/control/NotifiedMessage.java,https://github.com/k3po/k3po/commit/31ced21be582f95754e355587ca400e18050a09a,yes,,yes,,,
+,missing break ??,TRUE,writeRequested,driver/src/main/java/org/kaazing/k3po/driver/internal/control/handler/ControlDownstreamHandler.java,https://github.com/k3po/k3po/commit/31ced21be582f95754e355587ca400e18050a09a,yes,,yes,,,
+,typo in method name,TRUE,encode,driver/src/main/java/org/kaazing/k3po/driver/internal/control/handler/ControlEncoder.java,https://github.com/k3po/k3po/commit/31ced21be582f95754e355587ca400e18050a09a,yes,,yes,,,
+,assignment on the same line looks better (just like the old code),TRUE,prepareReceived,driver/src/main/java/org/kaazing/k3po/driver/internal/control/handler/ControlServerHandler.java,https://github.com/k3po/k3po/commit/31ced21be582f95754e355587ca400e18050a09a,yes,,yes,,,
+,typo notifiedMessage ?,TRUE,notifyReceived,driver/src/main/java/org/kaazing/k3po/driver/internal/control/handler/ControlServerHandler.java,https://github.com/k3po/k3po/commit/31ced21be582f95754e355587ca400e18050a09a,yes,,yes,,,
+https://github.com/orionhealth/XBDD/pull/172,I don't think you need to call serialise anymore when you've got proper DTOs to return - should be able to just return the DTOs directly and let it serialise itself.,TRUE,putReport,backend/src/main/java/xbdd/resources/Report.java,https://github.com/orionhealth/XBDD/commit/62e0fb8ce25ee81467f738eba9467082a36b8795,yes,,yes,,,
+https://github.com/arquillian/arquillian-extension-persistence/pull/61,"One potential improvement here would be to avoid `/` prefix. It's a bit confusing for the user, as he might assume it's in the root OS folder. Also not really needed,",TRUE,should_find_books,populator/nosql/couchbase-ftest/src/test/java/org/jboss/arquillian/populator/nosql/couchbase/CouchbaseTest.java,https://github.com/arquillian/arquillian-extension-persistence/commit/892423cd86dfef4ba7984fb1900b9d4cdef37ea0,yes,,yes,,,
+,That's what I was thinking about as this is what we also do with `@UsingDataSet`,TRUE,should_find_books,populator/nosql/couchbase-ftest/src/test/java/org/jboss/arquillian/populator/nosql/couchbase/CouchbaseTest.java,https://github.com/arquillian/arquillian-extension-persistence/commit/892423cd86dfef4ba7984fb1900b9d4cdef37ea0,no,,,,,related to previous comment in discussion (line 137)
+https://github.com/mapfish/mapfish-print/pull/1057,Are you sure we always want transparent legends?,TRUE,scaleToMaxWidth,core/src/main/java/org/mapfish/print/processor/jasper/LegendProcessor.java,https://github.com/mapfish/mapfish-print/commit/f0ea1ee00d6d81690efbbe640a5b2c6521fecd72,yes,,yes,,,
+,"A bit less frightening, yes. If it works for you, I find this solution less dangerous.",TRUE,scaleToMaxWidth,core/src/main/java/org/mapfish/print/processor/jasper/LegendProcessor.java,https://github.com/mapfish/mapfish-print/commit/f0ea1ee00d6d81690efbbe640a5b2c6521fecd72,no,,,,,answer in same discussion of comment at line 139
+,"Not sure if this is relevant, but:
+ 
+ 
+ 
+ please make sure the ""disabling transparency"" from https://github.com/mapfish/mapfish-print/pull/939 is not impacted by this.",TRUE,scaleToMaxWidth,-,https://github.com/mapfish/mapfish-print/commit/f0ea1ee00d6d81690efbbe640a5b2c6521fecd72,no,,,,,answer in same discussion of comment at line 139
+,"It is used by https://github.com/openoereb/pyramid_oereb_mfp
+ 
+ 
+ 
+ It can be tested with the dummy pdf report: local execution of https://github.com/openoereb/pyramid_oereb in combination with local execution of https://github.com/openoereb/pyramid_oereb_mfp, then request http://localhost:6543/oereb/extract/reduced/pdf/CH113928077734",TRUE,scaleToMaxWidth,-,https://github.com/mapfish/mapfish-print/commit/f0ea1ee00d6d81690efbbe640a5b2c6521fecd72,no,,,,,answer in same discussion of comment at line 140
+https://github.com/codenvy-legacy/ide/pull/395,Do you really need GWT class?,TRUE,addFirstPartWithIconTest,codenvy-ide-core/src/test/java/com/codenvy/ide/part/editor/EditorPartStackPresenterTest.java,https://github.com/codenvy-legacy/ide/commit/909dea534b9219b25017c8a9d5ec8ce6f3e02315,yes,,no,,"- code was moved
+- contributor and reviewer agree change is not needed in next comments of discussion",
+https://github.com/Sage-Bionetworks/BridgePF/pull/1803,"The purpose of this test is to make sure that unmarshallAccountSummary is robust against an account where everything is (for some reason) null. With that in mind, we want to pass in new HibernateAccount(), not makeValidHibernateAccount().",TRUE,unmarshallAccountSummaryBlankAccount,test/org/sagebionetworks/bridge/hibernate/HibernateAccountDaoTest.java,https://github.com/Sage-Bionetworks/BridgePF/commit/b27c78348734c2b6818b6aed6ea65d97162c9f73,yes,,yes,,,
+https://github.com/orbisgis/orbisgis/pull/488,"I'm not sure off the top of my head what the value of `Double.valueOf("""")` is.",TRUE,NumComparator,legend/src/main/java/org/orbisgis/legend/thematic/map/MappedLegend.java,https://github.com/orbisgis/orbisgis/commit/2d35a5ade77f01acf18d1c18f9bbb67b8229d60a,yes,,yes,,,method compare of inner class NumComparator
+,"This looks dangerous to me. The output of 
+ 
+ ``` java
+ System.out.println(Double.valueOf(""""));
+ ```
+ 
+ is
+ 
+ ``` java
+ Exception in thread ""main"" java.lang.NumberFormatException: empty String
+  at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1011)
+  at java.lang.Double.valueOf(Double.java:504)
+  at Main.main(Main.java:8)
+ ```",TRUE,NumComparator,legend/src/main/java/org/orbisgis/legend/thematic/map/MappedLegend.java,https://github.com/orbisgis/orbisgis/commit/2d35a5ade77f01acf18d1c18f9bbb67b8229d60a,yes,,yes,,comment related to 145,
+https://github.com/apache/streams/pull/17,"any time you replace the reference to the queue, you should do a write lock.",TRUE,prepare,streams-contrib/streams-provider-twitter/src/main/java/org/apache/streams/twitter/provider/TwitterTimelineProvider.java,https://github.com/apache/streams/commit/89cab1de89443830b5c9fa054dacbfdcc0b89915,yes,,yes,,,
+,"While I understand this is necessary under the current paradigm, I don't agree with it. It is crazy counter-intuitive.",TRUE,prepare,streams-contrib/streams-provider-twitter/src/main/java/org/apache/streams/twitter/provider/TwitterTimelineProvider.java,https://github.com/apache/streams/commit/89cab1de89443830b5c9fa054dacbfdcc0b89915,no,,,,,
+,"The naming of the classes is the issue, but those are outside of our control. You can synchronize all of the blocks on the same object for better readability in this class, as there will only ever be one thread adding to the queue.",TRUE,prepare,streams-contrib/streams-provider-twitter/src/main/java/org/apache/streams/twitter/provider/TwitterTimelineProvider.java,https://github.com/apache/streams/commit/89cab1de89443830b5c9fa054dacbfdcc0b89915,yes,,no,,next comment (line 150) explains why this change will not be performed,comment part of discussion starting at line 148
+,"Synchronizing on the class would be cumbersome. Presumes that only 1 stream that uses this class would ever be in use. So, it'd affect threads outside of the one stream being run. Given the circumstances, the local variable lock is appropriate, but should probably be final to ensure it isn't accidentally re-created after this classes instance is created.",TRUE,prepare,streams-contrib/streams-provider-twitter/src/main/java/org/apache/streams/twitter/provider/TwitterTimelineProvider.java,https://github.com/apache/streams/commit/89cab1de89443830b5c9fa054dacbfdcc0b89915,yes,,yes,,,comment part of discussion starting at line 148
+,Agreed on finality.,TRUE,prepare,streams-contrib/streams-provider-twitter/src/main/java/org/apache/streams/twitter/provider/TwitterTimelineProvider.java,https://github.com/apache/streams/commit/89cab1de89443830b5c9fa054dacbfdcc0b89915,yes,,yes,,,comment part of discussion starting at line 148
+,"""+1 There is a similar issue in the ElasticSearchReader",TRUE,prepare,streams-contrib/streams-provider-twitter/src/main/java/org/apache/streams/twitter/provider/TwitterTimelineProvider.java,https://github.com/apache/streams/commit/89cab1de89443830b5c9fa054dacbfdcc0b89915,no,,,,the comment is related to the code but the change should be done in another file,
+https://github.com/apache/cxf/pull/313,"@johnament pretty minor, before merging could you please rename property `org.apache.cxf.cdi.useCdiUnwrapper` to `org.apache.cxf.cdi.unwrap.proxies` (or similar) so it kind of explains its purpose.",TRUE,create,integration/cdi/src/main/java/org/apache/cxf/cdi/CdiBusBean.java,https://github.com/apache/cxf/commit/42efe37cda66bf3d4b11495452261ff3f624c8b1,yes,,yes,,,
+https://github.com/brianwernick/ExoMedia/pull/220,Merge conflict. This should be comparing width to x and height to y,TRUE,applyCenterInside,library/src/main/java/com/devbrackets/android/exomedia/core/video/scale/MatrixManager.java,https://github.com/brianwernick/ExoMedia/commit/382c6b99161feb8fb9167d5f7859f09034645fa4,yes,,yes,,,
+https://github.com/feedhenry/fh-android-sdk/pull/45,"I would flip this for clarity:
+ `return data == null ? null : encode(cryptoBox.decrypt(iv, decode(data));`",TRUE,read,fh-android-sdk/src/main/java/com/feedhenry/sdk/utils/EncryptedDataManager.java,https://github.com/feedhenry/fh-android-sdk/commit/04e331ebeb5080781324eae92822c5e3303b418e,yes,,yes,,,
+,Missing a close bracket (`)`) before the `;`.,TRUE,read,fh-android-sdk/src/main/java/com/feedhenry/sdk/utils/EncryptedDataManager.java,https://github.com/feedhenry/fh-android-sdk/commit/04e331ebeb5080781324eae92822c5e3303b418e,yes,,yes,,,
+https://github.com/IOT-DSA/sdk-dslink-java/pull/85,Is there any reason to return `this` on all those methods with a side effect? I'm not a big fan of that personally.,TRUE,clear,sdk/dslink/src/main/java/org/dsa/iot/dslink/link/SubscriptionHelper.java,https://github.com/IOT-DSA/sdk-dslink-java/commit/d1874fd127b2e0245388bc6703f2d0d0aa003f61,yes,,no,,"contributor's answer shows why the change is not needed: ""I'm the opposite, I'm a huge fan of being able to chain calls. I do it out of habit.""",
+https://github.com/intercom/intercom-java/pull/230,"If we're removing `API_KEY` we could also remove this whole switch and just run
+ 
+ `headers.put(""Authorization"", ""Basic "" + generateAuthString(Intercom.getToken(),""""));`
+ 
+ 
+ 
+ We can then remove `getAuthKeyType()` in `Intercom` class and get rid of `AuthKeyType` enum altogether.
+ 
+ @thewheat wdyt?",TRUE,createAuthorizationHeaders,-,https://github.com/intercom/intercom-java/commit/751af43fd245fb3c7e71359bb4068b74bf906407,yes,,yes,,,
+https://github.com/stagemonitor/stagemonitor/pull/216,remove the && and move before `httpClient.send`,TRUE,reportMetrics,stagemonitor-core/src/main/java/org/stagemonitor/core/metrics/metrics2/ElasticsearchReporter.java,https://github.com/stagemonitor/stagemonitor/commit/c41299d5e9a90928c4f381ab13b0a1f74c09e893,yes,,yes,,,
+,It would be better to not have duplicated code for creating and starting the reporter. Not a must as the amount of duplicated code is quite small but it would be nice.,TRUE,reportToElasticsearch,stagemonitor-core/src/main/java/org/stagemonitor/core/CorePlugin.java,https://github.com/stagemonitor/stagemonitor/commit/c41299d5e9a90928c4f381ab13b0a1f74c09e893,yes,,yes,,,
+https://github.com/wildfly-security/wildfly-elytron/pull/463,This is a lot of `equals()` calls. I think a String switch would probably be better here.,TRUE,isAlgorithmSupported,src/main/java/org/wildfly/security/auth/realm/ldap/UserPasswordPasswordUtil.java,https://github.com/wildfly-security/wildfly-elytron/commit/0decba0024411d4d4fd11b2827d0b1683faebc09,,no,,,,
+,"This bit of code needs the same treatment as lines 120-122 I think. If the evidence type is `PasswordGuessEvidence`, then return the result of `getCredentialAcquireSupport` for any algorithm (pass in `null` for the third argument).",TRUE,toEvidenceVerifier,src/main/java/org/wildfly/security/auth/realm/ldap/UserPasswordCredentialLoader.java,https://github.com/wildfly-security/wildfly-elytron/commit/0decba0024411d4d4fd11b2827d0b1683faebc09,,no,,,,
+,"If `getCredential` returns `null`, there will be an NPE.",TRUE,ForIdentityLoader,src/main/java/org/wildfly/security/auth/realm/ldap/UserPasswordCredentialLoader.java,https://github.com/wildfly-security/wildfly-elytron/commit/0decba0024411d4d4fd11b2827d0b1683faebc09,yes,,yes,,,
+https://github.com/Governance/dtgov/pull/232,"Can you switch this from Set to List? You are losing the sort order here. The 'getWorkflowTypes()' method should have the following signature:
+ 
+ ```
+ public List<Workflow> getWorkflowTypes() throws DtgovUiException;
+ ```",FALSE,getWorkflowTypes,dtgov-ui-war/src/main/java/org/overlord/dtgov/ui/server/services/WorkflowQueryService.java,https://github.com/Governance/dtgov/commit/f299f61b3d0fd47767b78fb9e1216b765e1cbac9,yes,,yes,,,
+,"This should just call ""setValue()"" on the workflowsTable. That's the reason for the widget to implement the HasValue interface to begin with. The addRow() method should not be visible and should not be called. There should be no need to call ""clear()"" here either - the method should just be this:
+ 
+ ```
+ protected void updateWorkflowsTable(List<Workflow> data) {
+  this.workflowsSearchInProgressMessage.setVisible(false);
+  if (data != null && data.size() > 0) {
+  this.workflowsTable.setValue(data);
+  this.workflowsTable.setVisible(true);
+  } else {
+  this.workflowsNoDataMessage.setVisible(true);
+  }
+ }
+ ```",FALSE,updateWorkflowsTable,dtgov-ui-war/src/main/java/org/overlord/dtgov/ui/client/local/pages/ProcessesPage.java,https://github.com/Governance/dtgov/commit/f299f61b3d0fd47767b78fb9e1216b765e1cbac9,yes,,yes,,,
+https://github.com/couchbase/couchbase-lite-java-core/pull/1485,"In general a transient error means that it's temporary and recoverable. For 406 with CouchDB, is it recoverable?",TRUE,isTransientError,src/main/java/com/couchbase/lite/util/Utils.java,https://github.com/couchbase/couchbase-lite-java-core/commit/37c60926af2f6b3d893c5a158d62895f9899ac4b,yes,,yes,,,
+,I started to think that I don't understand the issue.,TRUE,isTransientError,src/main/java/com/couchbase/lite/util/Utils.java,https://github.com/couchbase/couchbase-lite-java-core/commit/37c60926af2f6b3d893c5a158d62895f9899ac4b,no,,,,,related to comment at line 166
+https://github.com/sonatype/nexus-maven-plugins/pull/5,same pw and encoding,TRUE,execute,nexus-staging-maven-plugin/src/main/java/org/sonatype/nexus/plugin/staging/AbstractStagingActionMojo.java,https://github.com/sonatype/nexus-maven-plugins/commit/731375eb1e3a9f390b80243eb53a1edf670534f1,yes,https://github.com/sonatype/nexus-maven-plugins/pull/5/commits/e4325259850114307b0f2f3d36f6cc9087915fab#r1168111,yes,,,
+https://github.com/alphagov/pay-publicauth/pull/98,Please use `Collections.emptyList()` rather than `Collections.EMPTY_LIST` because generics,TRUE,revokeSingleToken,src/main/java/uk/gov/pay/publicauth/resources/PublicAuthResource.java,https://github.com/alphagov/pay-publicauth/commit/2bae0987c2c43761ff06ec513966ae92bb86f0c2,yes,,yes,,,
+https://github.com/Vazkii/Botania/pull/982,"Did you test this? It looks like something that wouldn't work. Given that that class works on its own, it's easier to just test if the mod is loaded rather than using Optional.",FALSE,preInitColoredLights,src/main/java/vazkii/botania/common/Botania.java,https://github.com/Vazkii/Botania/commit/93c3dd068055462512e1dd1e6bd93732b1119fd6,yes,,no,,"- contributor's answer shows why change is not needed: ""This was how they said to do it in the minecraftforge channel, and I can confirm that said code is called if and only if said mod is installed"" 
+- changed method only adds a print statement",
+https://github.com/YahooArchive/gondola/pull/2,illegalstateexception is better.,FALSE,loadRoutingTable,containers/jersey2-routing/src/main/java/com/yahoo/gondola/container/RoutingFilter.java,https://github.com/YahooArchive/gondola/commit/2b1eb610523f75a79fa0cb5ebdc2406833b5c8d6,,no,,,,
+,"""gondola.hosts[%s] is missing either the %s or %s config values"", hostId, APP_PORT, APP_SCHEME.",FALSE,loadRoutingTable,containers/jersey2-routing/src/main/java/com/yahoo/gondola/container/RoutingFilter.java,https://github.com/YahooArchive/gondola/commit/2b1eb610523f75a79fa0cb5ebdc2406833b5c8d6,,no,,,,
+,IllegalStateException,FALSE,proxyRequest,containers/jersey2-routing/src/main/java/com/yahoo/gondola/container/RoutingFilter.java,https://github.com/YahooArchive/gondola/commit/2b1eb610523f75a79fa0cb5ebdc2406833b5c8d6,,no,,,,
+https://github.com/CodeStory/fluent-http/pull/3,"Get rid of System.out.println, feedback must be provided by assertions.",FALSE,multi_filter,src/test/java/net/codestory/http/FilterTest.java,https://github.com/CodeStory/fluent-http/commit/a875b866dc87e52e2601c457237f25983de547d7,yes,,yes,,,
+,"Prefer assertj than junit4 native assert library:
+ Assertions.assertThat(control).isEqualTo(15)",FALSE,multi_filter,src/test/java/net/codestory/http/FilterTest.java,https://github.com/CodeStory/fluent-http/commit/a875b866dc87e52e2601c457237f25983de547d7,yes,,yes,,,
+,AssertJ also,FALSE,multi_filter,src/test/java/net/codestory/http/FilterTest.java,https://github.com/CodeStory/fluent-http/commit/a875b866dc87e52e2601c457237f25983de547d7,yes,,yes,,,
+https://github.com/snowplow/snowplow-java-tracker/pull/226,This little block is repeated in `flushBuffer`. Just pointing that out in case you care about DRY.,TRUE,getBufferConsumerRunnable,src/main/java/com/snowplowanalytics/snowplow/tracker/emitter/BatchEmitter.java,https://github.com/snowplow/snowplow-java-tracker/commit/efc9721751760eccb80a4c9ff80930b63da2f853,yes,,yes,,,
+,"I would prefer if `int bufferSize` is not a property of AbstractEmitter, but instead make it a property of BatchEmitter only.
+ 
+ 
+ 
+ Then the SimpleEmitter can implement `getBufferSize()` as `return 1` and the BatchEmitter can implement it as `return this.bufferSize`. I would even consider raising an exception if you try to setBufferSize on the SimpleEmitter.
+ 
+ 
+ 
+ (I appreciate this has nothing to do with the current issue)",TRUE,setBufferSize,-,https://github.com/snowplow/snowplow-java-tracker/commit/efc9721751760eccb80a4c9ff80930b63da2f853,yes,,yes,,,
+https://github.com/getodk/validate/pull/74,"For some reason this didn't catch my eye when the pattern was introduced in #69 -- what does ""non-standard use"" refer to?",TRUE,supports_xlsforms_value_and_label_refs_in_itemsets_using_secondary_external_instances_csv,src/test/java/org/opendatakit/validate/ValidateExternalSecondaryInstancesTest.java,https://github.com/getodk/validate/commit/5e2f9920111a4a10223db6155710f65966870173,yes,,yes,,,
+,"Technically it's the connector (`jr://file` vs. `jr://file-csv`) that differentiates between the two. I think this is ok, though.",TRUE,getLocalURI,src/org/opendatakit/validate/StubReference.java,https://github.com/getodk/validate/commit/5e2f9920111a4a10223db6155710f65966870173,yes,,yes,,,
+https://github.com/jenkinsci/promoted-builds-plugin/pull/83,Maybe makes sense to return something when exception happens,TRUE,isMet,src/main/java/hudson/plugins/promoted_builds/conditions/GroovyCondition.java,https://github.com/jenkinsci/promoted-builds-plugin/commit/c72721ca148d0c505ad0caa30c6d4f0146601606,yes,,no,,"contributor's answer shows why change is not needed, reviewer agrees",
+,NIT: it will cause static analysis failures on newer Jenkins cores. Makes sense to check against null,TRUE,isMet,src/main/java/hudson/plugins/promoted_builds/conditions/GroovyCondition.java,https://github.com/jenkinsci/promoted-builds-plugin/commit/c72721ca148d0c505ad0caa30c6d4f0146601606,,no,,,,
+https://github.com/jenkinsci/script-security-plugin/pull/180,"Incompatible. You cannot move a `static` method to a “superclass”; only javac follows that lookup chain, not the JVM AFAIK.
+ 
+ 
+ 
+ Anyway `EnumeratingWhitelist` was the right place for these to begin with I think.",TRUE,permitsFieldGet,-,https://github.com/jenkinsci/script-security-plugin/commit/6f323414c11d9eff1de257fb9a197842ed0135cc,yes,,yes,,,
+,Unchecked warnings here. Use `@SafeVarargs`.,TRUE,precache,src/main/java/org/jenkinsci/plugins/scriptsecurity/sandbox/whitelists/EnumeratingWhitelist.java,https://github.com/jenkinsci/script-security-plugin/commit/6f323414c11d9eff1de257fb9a197842ed0135cc,yes,,yes,,,
+,What is the point of having _both_ these statements?,TRUE,clearCache,src/main/java/org/jenkinsci/plugins/scriptsecurity/sandbox/whitelists/EnumeratingWhitelist.java,https://github.com/jenkinsci/script-security-plugin/commit/6f323414c11d9eff1de257fb9a197842ed0135cc,yes,,no,,"contributor's answer shows why change is not needed: ""HashMaps don't shrink once expanded and there's no arrayList.trimToSize() equivalent.""",
+,"This makes no sense to me. If we already precached all the signatures, why are we even iterating them again now? If it is not in the cache, just `return false` right away. Then we could delete the `matches` methods too, and make `permittedCache` be a `Set<String>`.
+ 
+ 
+ 
+ I guess you are doing this just to handle wildcard signatures? But as I noted in #179, that could be more easily (and efficiently) handled by precaching wildcards (i.e., deleting `isWildcard` and its call in `cacheSignatureList`) and having `permitsMethod` just do something like
+ 
+ 
+ 
+ ```java
+ 
+ return permittedCache.contains(Whitelist.canonicalMethodSig(method)) ||
+ 
+  permittedCache.contains(Whitelist.canonicalMethodSigStar(method));
+ 
+ ```
+ 
+ 
+ 
+ where `canonicalMethodSigStar` just adds `*` rather than `method.getName()`. Analogously for `permitsField`.",TRUE,permitsMethod,-,https://github.com/jenkinsci/script-security-plugin/commit/6f323414c11d9eff1de257fb9a197842ed0135cc,yes,,no,,"contributor's answer shows why change is not needed, reviewer agrees",
+,"Have the annotation now, so should be able to remove the casts and thus be fully checkable.",TRUE,precache,src/main/java/org/jenkinsci/plugins/scriptsecurity/sandbox/whitelists/EnumeratingWhitelist.java,https://github.com/jenkinsci/script-security-plugin/commit/6f323414c11d9eff1de257fb9a197842ed0135cc,yes,,no,,,
+,"> I doubt the performance difference will matter much
+ 
+ 
+ 
+ Agreed, was suggesting this more to simplify the implementation. I care more about that in this code area than others because of the possible security implications of mistakes.",TRUE,permitsMethod,-,https://github.com/jenkinsci/script-security-plugin/commit/6f323414c11d9eff1de257fb9a197842ed0135cc,no,,,,,related to comment at line 186
+https://github.com/codenvy-legacy/che-plugins/pull/464,why do you hate ternary op ?,TRUE,getDockerHost,plugin-docker/che-plugin-docker-client/src/main/java/org/eclipse/che/plugin/docker/client/DockerConnectorConfiguration.java,https://github.com/codenvy-legacy/che-plugins/commit/8bd03660552a7bcd2795c9b31c1b2df44ddb9687,yes,https://github.com/codenvy-legacy/che-plugins/pull/464/files#r47356817,yes,,,
+,If it is required not to be `null` may be you should add appropriate check e.g `Objects.requireNonNull(env);`,TRUE,dockerMachineCertsDirectoryPath,plugin-docker/che-plugin-docker-client/src/main/java/org/eclipse/che/plugin/docker/client/DockerConnectorConfiguration.java,https://github.com/codenvy-legacy/che-plugins/commit/8bd03660552a7bcd2795c9b31c1b2df44ddb9687,yes,,yes,,,
+https://github.com/OHDSI/WhiteRabbit/pull/188,"possible alternative implementation of method:
+ 
+ ```java
+ 
+ return conceptMap.getOrDefault(targetTable, Collections.emptyMap()).get(targetField);
+ 
+ ```",TRUE,get,-,https://github.com/OHDSI/WhiteRabbit/commit/e17eb517ba208b154fdc0f46590d9013c7d52d57,yes,,yes,,,
+,"You can use a try-with-resources block here to ensure that the stream is closed again. You can add multiple statements to the block, e.g. `try (InputStream a = ...; InputStreamReader r= new InputStreamReader(a)) {`",TRUE,load,rabbit-core/src/main/java/org/ohdsi/rabbitInAHat/dataModel/ConceptsMap.java,https://github.com/OHDSI/WhiteRabbit/commit/e17eb517ba208b154fdc0f46590d9013c7d52d57,yes,,yes,,,
+https://github.com/CogComp/open-eval/pull/29,"We probably don't need to do it here, but we may want to read in all these parameters (username, password, etc) from a properties file (rather than hard-coding them in multiple places in the code).",FALSE,testInsertConfigToDB,core/test/ApplicationTest.java,https://github.com/CogComp/open-eval/commit/71af72639761af55fa4278dc5bdfc680ce60319a,yes,,no,,commented code was not changed,
+,"How do these pass Semaphore, which is running without campus VPN?",FALSE,testGetConfigList,core/test/ApplicationTest.java,https://github.com/CogComp/open-eval/commit/71af72639761af55fa4278dc5bdfc680ce60319a,yes,,yes,,,
+,you run tests with `sbt test`? Or some other goal?,FALSE,testGetConfigList,core/test/ApplicationTest.java,https://github.com/CogComp/open-eval/commit/71af72639761af55fa4278dc5bdfc680ce60319a,no,,,,,related to discussion starting at line 194
+,"How about this: in your unit test, if you cannot connect (because of being outside campus), ignore the test; otherwise, run the test. You need to properly handle the exception you get when not able to connect. Like this is a snippet we used for doing a similar thing in another project. What do you think @dshine2 @DhruvVajpeyi ?
+ 
+ ``` java
+  TextAnnotation ta = null; 
+  try { 
+  ta = curator.createBasicTextAnnotation(""test"", ""0"", text); 
+  } catch (AnnotatorException e) {
+  e.printStackTrace(); 
+  fail(e.getMessage()); 
+  } catch (IllegalArgumentException e) { // If this is a ""connection timeout"" exception we can ignore it 
+  if (e.getMessage().contains(""Connection timed out"")) 
+  return;
+  }
+ ```",FALSE,testGetConfigList,core/test/ApplicationTest.java,https://github.com/CogComp/open-eval/commit/71af72639761af55fa4278dc5bdfc680ce60319a,yes,,yes,,,related to discussion starting at line 195
+https://github.com/jcarolus/android-chess/pull/62,why is there a sound on sendString - it will be mostly user initiated. Am i missing something?,FALSE,sendString,app/src/main/java/jwtc/android/chess/ics/ICSClient.java,https://github.com/jcarolus/android-chess/commit/dfd6d61484e8f9c01a1ee691f69e9dfbb6bcf036,yes,,yes,,,
+https://github.com/thehyve/dntp-portal/pull/313,"I think the reason that fetching the process instance was the first action, is that it throws an error if it does not exist, before trying to get the current task. Then the error is ""Process not found"" instead of ""Task not found"".",TRUE,unclaim,src/main/java/business/controllers/RequestController.java,https://github.com/thehyve/dntp-portal/commit/7789d51440fd1e88ec8b01c828c2afbf1bd30df3,yes,,yes,,,
+,"Updating the last assignee with the assignee name means that when the name of a user is edited, the old name will remain here. I think it is better to store the user id and fetch the name by id.",TRUE,claim,src/main/java/business/controllers/RequestController.java,https://github.com/thehyve/dntp-portal/commit/7789d51440fd1e88ec8b01c828c2afbf1bd30df3,yes,,yes,,,
+https://github.com/kiegroup/kie-wb-common/pull/666,"This condition is not covered by tests, but anyway I don't sure we are need this condition here.",TRUE,applyTitle,kie-wb-common-stunner/kie-wb-common-stunner-core/kie-wb-common-stunner-commons/kie-wb-common-stunner-client-common/src/main/java/org/kie/workbench/common/stunner/core/client/shape/impl/ShapeDefViewHandler.java,https://github.com/kiegroup/kie-wb-common/commit/78fe7f6412dd76d7858bd5ff6bb9503db042c4f1,yes,,yes,,,
+,"It looks like this if can be replaced by switch, or even better with one liner:
+ 
+ ```java
+ 
+ applyActiveState(shapge.State.getColor());
+ 
+ ```
+ 
+ with some minor refactoring.",TRUE,applyState,-,https://github.com/kiegroup/kie-wb-common/commit/78fe7f6412dd76d7858bd5ff6bb9503db042c4f1,yes,,yes,,,
+,mutationContext parameter is never used in this Class (but used in 8 method declaration). I suppose add this parameter in the future will be easier than clean up it.,TRUE,applyTitle,kie-wb-common-stunner/kie-wb-common-stunner-core/kie-wb-common-stunner-commons/kie-wb-common-stunner-client-common/src/main/java/org/kie/workbench/common/stunner/core/client/shape/impl/ShapeViewHandler.java,https://github.com/kiegroup/kie-wb-common/commit/78fe7f6412dd76d7858bd5ff6bb9503db042c4f1,no,,,,comment is not suggesting change at this moment,
+https://github.com/P3pp3rF1y/AncientWarfare2/pull/1117,This catch really shouldn't be here unless absolutely necessary. I would think there's a way of figuring out if something is null without the need to catch the exception (my guess is that this is here because Spell.get can return null so in that case addSpell call should be wrapped in a condition that makes sure that spell isn't null),TRUE,setNameAndPresetDefaults,src/main/java/net/shadowmage/ancientwarfare/npc/container/ContainerNpcFactionSpellcasterWizardry.java,https://github.com/P3pp3rF1y/AncientWarfare2/commit/1a89d95f8b8d220ea55467477f4f17a9549f33cb,yes,,yes,,,
+,"the full package name for the class is unnecessary, should really go into import so that only the class name is used here, the same for the EVENT_BUS call below.",TRUE,isPotionApplicable,src/main/java/net/shadowmage/ancientwarfare/npc/entity/faction/NpcFaction.java,https://github.com/P3pp3rF1y/AncientWarfare2/commit/1a89d95f8b8d220ea55467477f4f17a9549f33cb,yes,,yes,,,also mentioning line below comment
+,Use NBTHelper.getTagList instead of using EB's NBTExtras.listToNBT. The reason is that we should really only have dependency on external stuff where absolutely necessary and not where we have our own code that we can use or where we can have something on our side to use. That makes it easier to maintain going forward.,TRUE,writeEntityToNBT,src/main/java/net/shadowmage/ancientwarfare/npc/entity/faction/NpcFactionSpellcasterWizardry.java,https://github.com/P3pp3rF1y/AncientWarfare2/commit/1a89d95f8b8d220ea55467477f4f17a9549f33cb,yes,,yes,,,
+,NBTExtras.listToNBT > NBTHelper.getTagList,TRUE,writeAdditionalItemData,src/main/java/net/shadowmage/ancientwarfare/npc/entity/faction/NpcFactionSpellcasterWizardry.java,https://github.com/P3pp3rF1y/AncientWarfare2/commit/1a89d95f8b8d220ea55467477f4f17a9549f33cb,yes,,yes,,,
+,"NBTExtras.NBTToList should be replaced with call to NBTHelper, we don't have a list one yet but you can just recreate what is there already with getSet and create a new getList method that instead of creating a hashset creates arraylist",TRUE,readEntityFromNBT,src/main/java/net/shadowmage/ancientwarfare/npc/entity/faction/NpcFactionSpellcasterWizardry.java,https://github.com/P3pp3rF1y/AncientWarfare2/commit/1a89d95f8b8d220ea55467477f4f17a9549f33cb,yes,,yes,,,
+,NBTExtras replacement mentioned above,TRUE,readAdditionalItemData,src/main/java/net/shadowmage/ancientwarfare/npc/entity/faction/NpcFactionSpellcasterWizardry.java,https://github.com/P3pp3rF1y/AncientWarfare2/commit/1a89d95f8b8d220ea55467477f4f17a9549f33cb,yes,,yes,,,mentions comment at line 205
+,Camel case the variable here,TRUE,registerSpellcasterFactionNpc,src/main/java/net/shadowmage/ancientwarfare/npc/init/AWNPCEntities.java,https://github.com/P3pp3rF1y/AncientWarfare2/commit/1a89d95f8b8d220ea55467477f4f17a9549f33cb,yes,,yes,,,
+https://github.com/apache/geode/pull/5206,remove this setResponse call,TRUE,doSet,geode-redis/src/main/java/org/apache/geode/redis/internal/executor/string/SetExecutor.java,https://github.com/apache/geode/commit/762d0a6d1f9c8747b85e52f77b34b45e6301df11,yes,,yes,,,
+https://github.com/sundrio/sundrio/pull/84,"@jimmidyson: You can't just cast a TypeRef to ClassRef without checking. I know that the codebase is allover this kind of cast, but this is only the case, when we are dealing with types recognized as buildables. So we now that they are not primitves, they are not generics, or null types.",TRUE,fullyQualifiedNameDiff,annotations/builder/src/main/java/io/sundr/builder/internal/utils/BuilderUtils.java,https://github.com/sundrio/sundrio/commit/ad548ab9f3506323c7d735a050419fb0ce73d78c,yes,,yes,,,
+https://github.com/spring-cloud/spring-cloud-netflix/pull/3576,Please use curly braces for if statements,TRUE,getClassName,spring-cloud-netflix-ribbon/src/main/java/org/springframework/cloud/netflix/ribbon/PropertiesFactory.java,https://github.com/spring-cloud/spring-cloud-netflix/commit/ca0a63b00b0d60930094fab9a0c5cde91a529f06,yes,,yes,,,
+https://github.com/bitbar/testdroid-api/pull/268,Empty method?,FALSE,clone,src/main/java/com/testdroid/api/jrjc/model/APIBasicJiraIssue.java,https://github.com/bitbar/testdroid-api/commit/e26ba489c006583febea46c124aedaff1048d2fa,yes,,yes,,,
+,Empty method?,FALSE,clone,src/main/java/com/testdroid/api/jrjc/model/APIBasicJiraIssue.java,https://github.com/bitbar/testdroid-api/commit/e26ba489c006583febea46c124aedaff1048d2fa,yes,,yes,,,file: src/main/java/com/testdroid/api/jrjc/model/APIJiraIssueType.java
+,Empty method?,FALSE,clone,src/main/java/com/testdroid/api/jrjc/model/APIBasicJiraIssue.java,https://github.com/bitbar/testdroid-api/commit/e26ba489c006583febea46c124aedaff1048d2fa,yes,,yes,,,file: src/main/java/com/testdroid/api/jrjc/model/APIJiraPriority.java
+,"protected to new line
+ Should be implemented?",FALSE,clone,src/main/java/com/testdroid/api/jrjc/model/APIBasicJiraIssue.java,https://github.com/bitbar/testdroid-api/commit/e26ba489c006583febea46c124aedaff1048d2fa,yes,,yes,,,same as comment at line 212
+https://github.com/butterproject/butter-android/pull/110,"In some scenarios this may produce a bottleneck if we do multiple request for different kind of movies to the same provider instance (as popcorn does). The OkHttp Dispatcher handle the calls internally and all that calls are accesible via `queuedCalls()` or `runningCalls()`, In my opinion the cancel by tag mechanism is better and that logic should be moved to the Media or Base provider and keep the providers as clean as possible.",TRUE,enqueue,base/src/main/java/butter/droid/base/providers/media/VodoProvider.java,https://github.com/butterproject/butter-android/commit/6a7b8a2ba99d98e39bc0068218d917a898a906ea,yes,,yes,,,
+,OpenSubs?,TRUE,enqueue,base/src/main/java/butter/droid/base/providers/media/VodoProvider.java,https://github.com/butterproject/butter-android/commit/6a7b8a2ba99d98e39bc0068218d917a898a906ea,no,,,,,related to comment at line 217
+https://github.com/hal/testsuite/pull/290,What about moving snapshot backup/restore logic to Before/After methods? Since we are developing integration tests I don't believe that we ever want to run our tests in parallel so IMHO we can keep some state (model snapshot) outside of test methods. @rhatlapa WDYT?,TRUE,editDefaultAuthenticationContext,basic/src/test/java/org/jboss/hal/testsuite/test/configuration/elytron/authentication/DefaultAuthenticationContextTestCase.java,https://github.com/hal/testsuite/commit/2c7a9f47b48b117a34c022739a1e42e2064c3d06,yes,,yes,,,
+,Why is this called before backup?,TRUE,editDefaultAuthenticationContext,basic/src/test/java/org/jboss/hal/testsuite/test/configuration/elytron/authentication/DefaultAuthenticationContextTestCase.java,https://github.com/hal/testsuite/commit/2c7a9f47b48b117a34c022739a1e42e2064c3d06,yes,,yes,,,
+,"Why is this called outside of the try block?
+ 
+ This questions applies as well for many further parts of code.",TRUE,toggleAllowAllMechanisms,-,https://github.com/hal/testsuite/commit/2c7a9f47b48b117a34c022739a1e42e2064c3d06,yes,,no,,contributor's answer shows why change is not needed,
+,How many data does this log? What about trace log level instead? Just asking...,TRUE,verifyListAttributeContainsValue,common/src/main/java/org/jboss/hal/testsuite/creaper/ResourceVerifier.java,https://github.com/hal/testsuite/commit/2c7a9f47b48b117a34c022739a1e42e2064c3d06,yes,,yes,,,"contributor's answer would show why change is not needed, but change was made anyway"
+,Is it sufficient to just verify that the attribute is readable and not that expected list item is already propagated to it?,TRUE,verifyListAttributeContainsValue,common/src/main/java/org/jboss/hal/testsuite/creaper/ResourceVerifier.java,https://github.com/hal/testsuite/commit/2c7a9f47b48b117a34c022739a1e42e2064c3d06,yes,,yes,,,
+,please remove the spaces before `}`. Ideally add new line before the `}` instead of the spaces.,TRUE,toggleAnonymous,basic/src/test/java/org/jboss/hal/testsuite/test/configuration/elytron/authentication/ElytronAuthenticationConfigurationTestCase.java,https://github.com/hal/testsuite/commit/2c7a9f47b48b117a34c022739a1e42e2064c3d06,yes,,yes,,,
+,"I suggest to add
+ 
+ `&& !isModelNodePresentInListAttributeValue(attributeName, value)`
+ 
+ to the condition.",TRUE,verifyListAttributeDoesNotContainValue,-,https://github.com/hal/testsuite/commit/2c7a9f47b48b117a34c022739a1e42e2064c3d06,yes,,yes,,,
+https://github.com/PCGen/pcgen-base/pull/108,Is what valid? A FormatManager?,FALSE,testIsValid,PCGen-base/code/src/test/pcgen/base/formatmanager/FormatUtilitiesTest.java,https://github.com/PCGen/pcgen-base/commit/8e651a749f8f1b9ac4e47868ff4ab7f59140928c,yes,,no,,method name did not change (as requested by reviewer),
+https://github.com/spring-cloud/spring-cloud-stream-modules/pull/155,"No reason to worry about the value. It is optional and `JdbcPollingChannelAdapter` takes care about its `null`.
+ I mean the `if` is redundant.
+ Of course, it is minor and we can live with this anyway :smile:",TRUE,jdbcMessageSource,jdbc-source/src/main/java/org/springframework/cloud/stream/module/jdbc/source/JdbcSourceConfiguration.java,https://github.com/spring-cloud/spring-cloud-stream-modules/commit/cd08a541e59f367dc73188ad0e2e4c42785a934b,,no,,,,
+,"Looks like something has been changed in the SCDF since XD, so we don't need to worry about `auto-startup` phase and the default behavior works as is.
+ I mean this `.autoStartup(false)` is redundant.",TRUE,pollingFlow,jdbc-source/src/main/java/org/springframework/cloud/stream/module/jdbc/source/JdbcSourceConfiguration.java,https://github.com/spring-cloud/spring-cloud-stream-modules/commit/cd08a541e59f367dc73188ad0e2e4c42785a934b,yes,,no,,autoStartup was not removed,reviewer's comment (see line 230) shows change will be applied on merge
+,"`AnnotationConfigApplicationContext` is `Closeable`, so should be `close()`'d in the end, independently of test result.
+ At least STS barks here :smile:",TRUE,queryIsRequired,jdbc-source/src/test/java/org/springframework/cloud/stream/module/jdbc/source/JdbcSourcePropertiesTests.java,https://github.com/spring-cloud/spring-cloud-stream-modules/commit/cd08a541e59f367dc73188ad0e2e4c42785a934b,,no,,,,
+,I'll remove this on merge to avoid any similar discussions in the future.,TRUE,pollingFlow,jdbc-source/src/main/java/org/springframework/cloud/stream/module/jdbc/source/JdbcSourceConfiguration.java,https://github.com/spring-cloud/spring-cloud-stream-modules/commit/cd08a541e59f367dc73188ad0e2e4c42785a934b,no,,,,,
+https://github.com/TwilioDevEd/automated-survey-spring/pull/7,"This whole method could be replaced with `return !Boolean.parseBoolean(env.get(""TWILIO_DISABLE_DB_SSL""));`",TRUE,getSslEnabledDb,src/main/java/com/twilio/survey/util/AppSetup.java,https://github.com/TwilioDevEd/automated-survey-spring/commit/fc9d9d12b0ac41feadeec79087dd434b9665e935,yes,,yes,,,
+https://github.com/SolidStateGroup/patientview/pull/340,"Is this OK? toString() on a null object would give you ""null""?",TRUE,validate,root/data/src/main/java/org/patientview/service/impl/UkrdcServiceImpl.java,https://github.com/SolidStateGroup/patientview/commit/dd6e582987d23b6af6ae4044ab0a2017dee28889,yes,,yes,,,
+https://github.com/qaprosoft/carina-demo/pull/54,- Please rewrite constructor according to project style guide.,FALSE,WebViewPage,src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/WebViewPage.java,https://github.com/qaprosoft/carina-demo/commit/3f5489aeee7a35302b8e55d67894205a46a92a42,yes,https://github.com/zebrunner/carina-demo/pull/54/files/dc75e0e3762da3eb3f9524161906ef57ae316980#r272539551,no,,method did not change,
+,It looks strange without verification. Is it expected?,FALSE,testUIElements,src/test/java/com/qaprosoft/carina/demo/MobileSampleTest.java,https://github.com/qaprosoft/carina-demo/commit/3f5489aeee7a35302b8e55d67894205a46a92a42,yes,https://github.com/zebrunner/carina-demo/pull/54#discussion_r275443888,yes,,,
+,"contextHelper.switchMobileContext(MobileContextUtils.View.WEB, getDriver()); it looks strange.
+ 
+ I believe it should be like that:
+ 
+ contextHelper.switchMobileContext(View.WEB);",FALSE,testWebView,-,https://github.com/qaprosoft/carina-demo/commit/3f5489aeee7a35302b8e55d67894205a46a92a42,yes,https://github.com/zebrunner/carina-demo/pull/54#discussion_r275531266,yes,,,
+,"if you use AppiumDriver<?> driver = (AppiumDriver<?>) getDriverSafe();
+ 
+ then there is no sense in if (driver instanceof AppiumDriver)",FALSE,getDriverSafe,-,https://github.com/qaprosoft/carina-demo/commit/3f5489aeee7a35302b8e55d67894205a46a92a42,yes,https://github.com/zebrunner/carina-demo/pull/54#discussion_r275538619,yes,,,
+https://github.com/vkostyukov/la4j/pull/52,"Please, declare variable just before using.",TRUE,decompose,src/main/java/org/la4j/decomposition/CroutDecompositor.java,https://github.com/vkostyukov/la4j/commit/143c3f055e74e67804a8813b6501ff0b683c3b9c,yes,,yes,,,
+,Here `double s = 0.0;`,TRUE,decompose,src/main/java/org/la4j/decomposition/CroutDecompositor.java,https://github.com/vkostyukov/la4j/commit/143c3f055e74e67804a8813b6501ff0b683c3b9c,yes,,yes,,,related to comment at line 237
+,Declare a new double variable here.,TRUE,decompose,src/main/java/org/la4j/decomposition/CroutDecompositor.java,https://github.com/vkostyukov/la4j/commit/143c3f055e74e67804a8813b6501ff0b683c3b9c,yes,,yes,,,
+,"We can't compare double with 0.0 - it is unsafe. Please, use the following code:
+ 
+ ``` java
+ if (Math.abs(value) < Matrices.EPS) {
+  // close to zero
+ }
+ ```",TRUE,decompose,src/main/java/org/la4j/decomposition/CroutDecompositor.java,https://github.com/vkostyukov/la4j/commit/143c3f055e74e67804a8813b6501ff0b683c3b9c,yes,,yes,,,
+,"Also, add brackets after condition.",TRUE,decompose,src/main/java/org/la4j/decomposition/CroutDecompositor.java,https://github.com/vkostyukov/la4j/commit/143c3f055e74e67804a8813b6501ff0b683c3b9c,yes,,yes,,,
+https://github.com/jReddit/jReddit/pull/138,I think you'll need to format all these classes that you created/modified. The indentation looks funky :smile_cat:,FALSE,parseGeneric,src/main/java/com/github/jreddit/parser/listing/RedditListingParser.java,https://github.com/jReddit/jReddit/commit/1ed7ad506c4e564567df9f41774c778f3f515682,yes,https://github.com/jReddit/jReddit/pull/138/files/4fe46e2b8f10c1fdf8cbc64ef866e9904c28f160#r33317642,yes,,,"general comment, not strictly related to the commented method"
+,parseGeneric sounds too...generic :),FALSE,parseGeneric,src/main/java/com/github/jreddit/parser/listing/RedditListingParser.java,https://github.com/jReddit/jReddit/commit/1ed7ad506c4e564567df9f41774c778f3f515682,yes,,no,,"method name not changed (as requested by reviewer), only thrown exception changed",
+,can you use instead of string concatenation a StringBuilder?,FALSE,printCommentTree,src/main/java/com/github/jreddit/parser/util/CommentTreeUtils.java,https://github.com/jReddit/jReddit/commit/1ed7ad506c4e564567df9f41774c778f3f515682,yes,,yes,,,
+,StringBuilder :),FALSE,printCommentTree,src/main/java/com/github/jreddit/parser/util/CommentTreeUtils.java,https://github.com/jReddit/jReddit/commit/1ed7ad506c4e564567df9f41774c778f3f515682,yes,,yes,,,
+https://github.com/owncloud/android/pull/2242,`case` should not have braces.,TRUE,onOptionsItemSelected,src/com/owncloud/android/ui/activity/FileDisplayActivity.java,https://github.com/owncloud/android/commit/77e0008df6bd1b07b01d7a095df41d34991c7ae8,yes,,no,,commented code not changed,
+https://github.com/signalfx/signalfx-java/pull/71,Why is the `orgId` required is this API? Any particular reason why the backend doesn't derive it from the given auth token like we do for normal ingest?,TRUE,backfillDataPoints,signalfx-java/src/main/java/com/signalfx/metrics/connection/AbstractHttpDataPointProtobufReceiverConnection.java,https://github.com/signalfx/signalfx-java/commit/1970b25c6a608f337fd7a0d3841e286ee0619db9,yes,,no,,,
+,Did you determine these to be redundant?,TRUE,testHttpConnection,signalfx-java/src/test/java/com/signalfx/metrics/connection/HttpDataPointProtobufReceiverConnectionTest.java,https://github.com/signalfx/signalfx-java/commit/1970b25c6a608f337fd7a0d3841e286ee0619db9,yes,,yes,,,
+https://github.com/openmrs/openmrs-module-fhir/pull/209,Can you assert that the list was empty before saving? Or at least less than after saving?,TRUE,getConditionsByPatientUuid_shouldReturnListOfActiveConditions,api-2.2/src/test/java/org/openmrs/module/fhir/api/ConditionServiceTest.java,https://github.com/openmrs/openmrs-module-fhir/commit/4a0f48d39ffb4de1f5144c362c232a03b664002b,yes,,no,,list was removed instead of adding assertion,
+,Can you assert that there we no conditions before saving?,TRUE,getConditionsByPatientUuid_shouldReturnListOfActiveConditions,api-2.2/src/test/java/org/openmrs/module/fhir/api/ConditionServiceTest.java,https://github.com/openmrs/openmrs-module-fhir/commit/4a0f48d39ffb4de1f5144c362c232a03b664002b,yes,,no,,list was removed instead of adding assertion,
+,Why not use activeConditions?,TRUE,getConditionsByPatientUuid_shouldReturnListOfActiveConditions,api-2.2/src/test/java/org/openmrs/module/fhir/api/ConditionServiceTest.java,https://github.com/openmrs/openmrs-module-fhir/commit/4a0f48d39ffb4de1f5144c362c232a03b664002b,yes,,no,,,
+,Didn't you mix patient and patientRef?,TRUE,getConditionsByPatientUuid_shouldReturnListOfActiveConditions,api-2.2/src/test/java/org/openmrs/module/fhir/api/ConditionServiceTest.java,https://github.com/openmrs/openmrs-module-fhir/commit/4a0f48d39ffb4de1f5144c362c232a03b664002b,yes,,yes,,,
+https://github.com/motech/motech/pull/188,Do this in finally,FALSE,regenerateMdsDataBundle,platform/mds/mds/src/main/java/org/motechproject/mds/service/impl/JarGeneratorServiceImpl.java,https://github.com/motech/motech/commit/007bd46d51d0b5569c7a861e172a5cbf7f570b4a,yes,,yes,,,
+https://github.com/pac4j/pac4j/pull/1083,any reason not to take advantage of the optional to continue instead of transforming to a nullable value?,TRUE,validate,pac4j-cas/src/main/java/org/pac4j/cas/credentials/authenticator/CasAuthenticator.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,shouldn't we decide what to do if it's not present instead of passing a nullable object to TokenCredentials? maybe the later should either accept an optional or not accept a nullable value.,TRUE,extract,pac4j-cas/src/main/java/org/pac4j/cas/credentials/extractor/TicketAndLogoutRequestExtractor.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,only log if it's present,TRUE,extract,pac4j-cas/src/main/java/org/pac4j/cas/credentials/extractor/TicketAndLogoutRequestExtractor.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,only compute and log if it's present,TRUE,extract,pac4j-cas/src/main/java/org/pac4j/cas/credentials/extractor/TicketAndLogoutRequestExtractor.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,isNotBlank should accept an optional and return false if it's not present,TRUE,isTokenRequest,pac4j-cas/src/main/java/org/pac4j/cas/credentials/extractor/TicketAndLogoutRequestExtractor.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,exploit the fact it is an optional instead of turning it into a null!!,TRUE,destroySessionBack,pac4j-cas/src/main/java/org/pac4j/cas/logout/DefaultCasLogoutHandler.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,I would prefer that you use a map to the boolean value followed by a orElse(false),TRUE,isAuthorized,pac4j-core/src/main/java/org/pac4j/core/authorization/authorizer/csrf/CsrfAuthorizer.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,do not use nullable value if possible. I'm not sure but shouldn't you manage to exploit optional to do the comparison below? maybe using flatMap...,TRUE,isAuthorized,pac4j-core/src/main/java/org/pac4j/core/authorization/authorizer/csrf/CsrfAuthorizer.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,this cast seems dangerous: why is an optional stored in there?,TRUE,getTokenFromSession,pac4j-core/src/main/java/org/pac4j/core/authorization/authorizer/csrf/DefaultCsrfTokenGenerator.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,add the type parameter even if it's object,TRUE,getRequestAttribute,pac4j-core/src/main/java/org/pac4j/core/context/J2EContext.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,"do not use an intermediary variable, directly go for this.extractor.extract(context).map ...",TRUE,extract,pac4j-core/src/main/java/org/pac4j/core/credentials/extractor/BasicAuthExtractor.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,take advantage of flatmap to avoid calling isPresent and get,TRUE,extract,-,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,try to exploit map and co for this method,TRUE,extract,pac4j-core/src/main/java/org/pac4j/core/credentials/extractor/HeaderExtractor.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,avoid using an intermediary variable if it's not used twice :),TRUE,redirectToOriginallyRequestedUrl,pac4j-core/src/main/java/org/pac4j/core/engine/DefaultCallbackLogic.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,I don't like all these orElse(null) :),TRUE,isAjax,pac4j-core/src/main/java/org/pac4j/core/http/ajax/DefaultAjaxRequestResolver.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,it is strange to see all those code to handle null if we are using optional...,TRUE,matches,pac4j-core/src/main/java/org/pac4j/core/matching/HeaderMatcher.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,don't use orElse(null) :),TRUE,run,pac4j-core/src/test/java/org/pac4j/core/run/RunClient.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,prefer using map and/or flatMap and not nulls,TRUE,clientInit,pac4j-oauth/src/main/java/org/pac4j/oauth/client/FacebookClient.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,prefer using map and/or flatMap and not nulls,TRUE,clientInit,pac4j-oauth/src/main/java/org/pac4j/oauth/client/FacebookClient.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,file: pac4j-oauth/src/main/java/org/pac4j/oauth/client/LinkedIn2Client.java
+,prefer using map and/or flatMap and not nulls,TRUE,clientInit,pac4j-oauth/src/main/java/org/pac4j/oauth/client/FacebookClient.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,file: pac4j-oauth/src/main/java/org/pac4j/oauth/client/OrcidClient.java
+,"prefer using map and/or flatMap and not nulls
+ 
+ and while you are at it: replace those awful return true/false by returning the condition in the if :)",TRUE,clientInit,-,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,prefer using map and/or flatMap and not nulls,TRUE,getOAuthCredentials,pac4j-oauth/src/main/java/org/pac4j/oauth/client/FacebookClient.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,no,,no map/flatMap used,file: pac4j-oauth/src/main/java/org/pac4j/oauth/credentials/extractor/OAuth10CredentialsExtractor.java
+,use map and orThrow instead of checking of isPresent,TRUE,getOAuthCredentials,pac4j-oauth/src/main/java/org/pac4j/oauth/credentials/extractor/OAuth20CredentialsExtractor.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+,don't use orElse(null),TRUE,initializeSession,pac4j-saml/src/main/java/org/pac4j/saml/storage/HttpSessionStorage.java,https://github.com/pac4j/pac4j/commit/bef247dcd354598f271b6d48489e5f53b6d7428a,yes,,yes,,,
+https://github.com/warmshowers/wsandroid/pull/301,Move this line one up and we do not need to change to the main thread in case the filter does apply.,TRUE,fetchUsersForCurrentMapPosition,app/src/main/java/fi/bitrite/android/ws/ui/MapFragment.java,https://github.com/warmshowers/wsandroid/commit/657352f64b3be7380cebdd663f94a0d4b1067182,yes,,yes,,,
+,`loadOfflineUserDisposable`,TRUE,loadOfflineUsers,app/src/main/java/fi/bitrite/android/ws/ui/MapFragment.java,https://github.com/warmshowers/wsandroid/commit/657352f64b3be7380cebdd663f94a0d4b1067182,yes,,yes,,,
+https://github.com/zaproxy/zaproxy/pull/3386,This slipped through.,TRUE,getJSplitPane,src/org/parosproxy/paros/view/AbstractParamDialog.java,https://github.com/zaproxy/zaproxy/commit/d22b1ca4d99794e73a7da8f8b3f6f2589d6d3c4e,yes,,yes,,,
+https://github.com/threadly/threadly/pull/141,Do we really need this lock if the future is done or already canceled?,TRUE,cancel,src/main/java/org/threadly/concurrent/future/SettableListenableFuture.java,https://github.com/threadly/threadly/commit/37074bc0c9037702bdfb2ee344ea06b05d3753ae,yes,,yes,,,
+,"I would rename this local variable, makes following which one is set for what confusing, maybe didCancel or something like that",TRUE,cancel,src/main/java/org/threadly/concurrent/future/SettableListenableFuture.java,https://github.com/threadly/threadly/commit/37074bc0c9037702bdfb2ee344ea06b05d3753ae,yes,,no,,variable name not changed,
+,"i would, but i agree its not a big deal at all, just more of a nitpick",TRUE,cancel,src/main/java/org/threadly/concurrent/future/SettableListenableFuture.java,https://github.com/threadly/threadly/commit/37074bc0c9037702bdfb2ee344ea06b05d3753ae,no,,,,,related to discussion starting at line 281
+https://github.com/SonarSource/sonar-html/pull/121,why not `peek()`?,TRUE,startElement,sonar-html-plugin/src/main/java/org/sonar/plugins/html/checks/sonar/ObjectWithAlternativeContentCheck.java,https://github.com/SonarSource/sonar-html/commit/d05ab8343608bbe8d9309c2fad435899b3fbf6f6,yes,,no,,"no usage of peek, too many commits/changes between comment and final commit",
+,"I prefer to use ""stack"" verbs if we work with stack and don't use feature of deque. There are `push`/`pop` methods available",TRUE,startElement,sonar-html-plugin/src/main/java/org/sonar/plugins/html/checks/sonar/ObjectWithAlternativeContentCheck.java,https://github.com/SonarSource/sonar-html/commit/d05ab8343608bbe8d9309c2fad435899b3fbf6f6,yes,,no,,"no stack present, too many commits/changes between comment and final commit",
+,"Can `object` be not null and `hasAlternativeContent == false` ? You could probably set `object` to `null` whenever you set `hasAlternativeContent = true`, that way you won't need the class to keep the state.",TRUE,endElement,sonar-html-plugin/src/main/java/org/sonar/plugins/html/checks/sonar/ObjectWithAlternativeContentCheck.java,https://github.com/SonarSource/sonar-html/commit/d05ab8343608bbe8d9309c2fad435899b3fbf6f6,yes,,yes,,,
+https://github.com/Adobe-Consulting-Services/acs-aem-commons/pull/1905,"Arrays.stream(response.getHeaderNames())
+ 
+ .filter(headerName -> !isResponseHeaderExcluded(headerName, excludedHeaders))
+ 
+ .collect(Collectors.toMap(headerName -> headerName, headerName -> response.getHeaders(headerName)));
+ 
+ 
+ 
+ ?",TRUE,extractHeaders,-,https://github.com/Adobe-Consulting-Services/acs-aem-commons/commit/2c3a6dd2f971e9cb6ff57b8f68899123cfc03a0d,yes,,yes,,,file: bundle/src/main/java/com/adobe/acs/commons/httpcache/engine/impl/HttpCacheEngineImpl.java
+,"Generally better to qualify than making static import; this makes me go look at where it's coming from (ie. did you implement your own for some reason?) I tend to use static imports for constants or in Unit tests where its very obvious what is not provided by custom code (ie. assertXXX(..), mock(..), etc.)
+ 
+ ```suggestion
+ 
+  return Collections.emptyList();
+ 
+ ```",TRUE,-,-,https://github.com/Adobe-Consulting-Services/acs-aem-commons/commit/2c3a6dd2f971e9cb6ff57b8f68899123cfc03a0d,yes,,yes,,,"method: getExcludedResponseHeaderPatterns
+file: bundle/src/main/java/com/adobe/acs/commons/httpcache/config/HttpCacheConfig.java"
+,"Should just call non-deprecated `build(..)` method, rather than duplicating work.
+ 
+ 
+ 
+ ```suggestion
+ 
+  // Extracting HTTP Response Header Names and Values
+ 
+  Map<String, List<String>> headers = new HashMap<>();
+ 
+  List<String> headerNames = new ArrayList<>();
+ 
+ 
+ 
+  headerNames.addAll(responseWrapper.getHeaderNames());
+ 
+  for (String headerName: headerNames) {
+ 
+  List<String> values = new ArrayList<>();
+ 
+  values.addAll(responseWrapper.getHeaders(headerName));
+ 
+  headers.put(headerName, values);
+ 
+  }
+ 
+ 
+ 
+  return build(responseWrapper, responseWrapper.getStatus(), responseWrapper.getCharacterEncoding(), responseWrapper. getContentType(), headerNames);
+ 
+ ```",TRUE,build,-,https://github.com/Adobe-Consulting-Services/acs-aem-commons/commit/2c3a6dd2f971e9cb6ff57b8f68899123cfc03a0d,yes,,yes,,,"file: bundle/src/main/java/com/adobe/acs/commons/httpcache/engine/CacheContent.java
+"
+https://github.com/f2prateek/dart/pull/33,this is not the pattern to use a writer: the close should be inside the finally block. And close flushes.,TRUE,process,dart/src/main/java/com/f2prateek/dart/internal/InjectExtraProcessor.java,https://github.com/f2prateek/dart/commit/8cff55c933cea7a86f52f37ad5048d07d8614383,yes,https://github.com/f2prateek/dart/pull/33/commits/f52620d6a61d25da7eea9666d751ba2adcc705e1#r30056159,yes,,,
+https://github.com/flamingchickens1540/quasar-helios-2015/pull/76,This should probably be tunable as well.,FALSE,autonomousMain,QuasarHelios2015/src/org/team1540/quasarhelios/AutoStacker.java,https://github.com/flamingchickens1540/quasar-helios-2015/commit/0849e92d7795dda4dd4bdfb7bd9bc93ce836362f,yes,,yes,,,
+,This would be more consistent if it were lowercase.,FALSE,getTypeName,QuasarHelios2015/src/org/team1540/quasarhelios/AutoStacker.java,https://github.com/flamingchickens1540/quasar-helios-2015/commit/0849e92d7795dda4dd4bdfb7bd9bc93ce836362f,yes,,yes,,,
+,Maybe we should reset the rollers to their old state once we're done.,FALSE,autonomousMain,QuasarHelios2015/src/org/team1540/quasarhelios/AutoStacker.java,https://github.com/flamingchickens1540/quasar-helios-2015/commit/0849e92d7795dda4dd4bdfb7bd9bc93ce836362f,yes,,yes,,,
+,"Also, we've previously had the resetting functionality within a `finally` block.",FALSE,autonomousMain,QuasarHelios2015/src/org/team1540/quasarhelios/AutoStacker.java,https://github.com/flamingchickens1540/quasar-helios-2015/commit/0849e92d7795dda4dd4bdfb7bd9bc93ce836362f,yes,,yes,,,
+https://github.com/Twitter4J/Twitter4J/pull/247,"I think an enum would be useful here to illustrate the allowed values of tweet_mode (""compat"" and ""extended"")",TRUE,TwitterImpl,twitter4j-core/src/main/java/twitter4j/TwitterImpl.java,https://github.com/Twitter4J/Twitter4J/commit/6b67635082c81e920ff11da7a5e5cbaca5b49133,yes,,no,,"enum not added, commented code did not change",
+,"I need you need to change the size of the params variable:
+ 
+ List<HttpParameter> params = new ArrayList<HttpParameter>(4);",TRUE,TwitterImpl,twitter4j-core/src/main/java/twitter4j/TwitterImpl.java,https://github.com/Twitter4J/Twitter4J/commit/6b67635082c81e920ff11da7a5e5cbaca5b49133,yes,,no,,"size not changed, commented code did not change",
+https://github.com/eclipse/thym/pull/65,Supported platforms is pluggable. Use _org.eclipse.thym.core.HybridCore.getPlatformSupports()_ to discover the supported platforms at that moment.,TRUE,getActiveEnginesFromPlatformsJson,plugins/org.eclipse.thym.core/src/org/eclipse/thym/core/engine/HybridMobileEngineManager.java,https://github.com/eclipse/thym/commit/7165532dcdeab5a680c780479db5160d5fa1fec6,,no,,,,
+https://github.com/eugenp/tutorials/pull/8888,Could we prefer a proper logger instead of System.x - we already have a logback.xml in the module.,TRUE,run,spring-batch/src/main/java/org/baeldung/conditionalflow/ConditionalFlowApplication.java,https://github.com/eugenp/tutorials/commit/88ce82650e49586c7b1e35e33610fbf6ba273d81,yes,,yes,,,
+,This line will always evaluate to false as we are comparing ExitCode with String?,TRUE,decide,spring-batch/src/main/java/org/baeldung/conditionalflow/NumberInfoDecider.java,https://github.com/eugenp/tutorials/commit/88ce82650e49586c7b1e35e33610fbf6ba273d81,yes,,yes,,,
+,"Perhaps consider a constant for ""NOTIFY"" as it is repeated various times.",TRUE,numberGeneratorNotifierJob,spring-batch/src/main/java/org/baeldung/conditionalflow/config/NumberInfoConfig.java,https://github.com/eugenp/tutorials/commit/88ce82650e49586c7b1e35e33610fbf6ba273d81,yes,,yes,,,
+https://github.com/zaproxy/zap-admin/pull/2,"The method mkdirs is being called twice, is that on purpose?",TRUE,recursiveCopy,src/org/zaproxy/admin/HelpGenerator.java,https://github.com/zaproxy/zap-admin/commit/aa2f837d81baace4b8dcfcb5ff6d20340a468e23,yes,,yes,,,
+,Should abort/return in this case?,TRUE,recursiveCopy,src/org/zaproxy/admin/HelpGenerator.java,https://github.com/zaproxy/zap-admin/commit/aa2f837d81baace4b8dcfcb5ff6d20340a468e23,yes,,yes,,,
+,Should return?,TRUE,generateHelp,src/org/zaproxy/admin/HelpGenerator.java,https://github.com/zaproxy/zap-admin/commit/aa2f837d81baace4b8dcfcb5ff6d20340a468e23,yes,,yes,,,
+,Could use a do-while loop.,TRUE,main,src/org/zaproxy/admin/HelpGenerator.java,https://github.com/zaproxy/zap-admin/commit/aa2f837d81baace4b8dcfcb5ff6d20340a468e23,yes,,yes,,,
+,"Same here, with do-while loop.",TRUE,main,src/org/zaproxy/admin/HelpGenerator.java,https://github.com/zaproxy/zap-admin/commit/aa2f837d81baace4b8dcfcb5ff6d20340a468e23,yes,,yes,,,
+,Should include the path of the directory.,TRUE,main,src/org/zaproxy/admin/HelpGenerator.java,https://github.com/zaproxy/zap-admin/commit/aa2f837d81baace4b8dcfcb5ff6d20340a468e23,yes,,yes,,,
+,There's a typo in add-on.,TRUE,main,src/org/zaproxy/admin/HelpGenerator.java,https://github.com/zaproxy/zap-admin/commit/aa2f837d81baace4b8dcfcb5ff6d20340a468e23,yes,,yes,,,
+,"Sorry, this should throw an exception instead. This method is recursive. failing to create the directories would lead to further problems.
+ 
+ One thing that we need to do is check if `destFile` already exist before attempting to create it/them (`mkdirs` creates intermediate directories too, which could fail when calling `recursiveCopy` again).",TRUE,recursiveCopy,-,https://github.com/zaproxy/zap-admin/commit/aa2f837d81baace4b8dcfcb5ff6d20340a468e23,yes,,yes,,,
+https://github.com/android/android-test/pull/711,unfortunately it looks like getTrimmedTrace is only available in JUnit 4.13. Androidx.test still uses junit 4.12.,TRUE,reportFailure,runner/android_junit_runner/java/androidx/test/internal/runner/listener/InstrumentationResultPrinter.java,https://github.com/android/android-test/commit/4f37f6bb4ebecd4ff12f058b42fafdfb26c8f58a,yes,,yes,,,
+,"Please remove for now, but add a TODO to use it. 
+ 
+ 
+ 
+ I have always wanted to see stack traces trimmed and I'm stoked to see such a method available, but JUnit upgrades can be onerous , so let's pursue that separately.",TRUE,reportFailure,-,https://github.com/android/android-test/commit/4f37f6bb4ebecd4ff12f058b42fafdfb26c8f58a,yes,,yes,,,related to comment at line 309
+https://github.com/Peergos/Peergos/pull/650,I think the 2 sql statments can be combined into 1 command,TRUE,addPendingUsage,src/peergos/server/space/JdbcUsageStore.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,no,,"contributor's answer shows why change cannot be made ""sqlite and postgres syntax for conflict is different. so need to figure out a clean way to do this""",
+,missing userId field in where clause,TRUE,addPendingUsage,src/peergos/server/space/JdbcUsageStore.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,no,,"contributor's answer shows why change is not needed, reviewer agrees (by reaction)",
+,Ths should be one sql statement where there is a join between userusage and pendingusage,TRUE,getUsage,src/peergos/server/space/JdbcUsageStore.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,yes,,,
+,the sql statments should be in a db transaction,TRUE,addWriter,src/peergos/server/space/JdbcUsageStore.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,no,,"contributor's answer shows why change is not needed, reviewer agrees (by reaction)",
+,sql statement can join writerusage and users tables,TRUE,getOwner,src/peergos/server/space/JdbcUsageStore.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,yes,,,
+,"like this:
+ 
+ INSERT INTO pendingusage (user_id, writer_id, pending_bytes) values (1, 2, 10)
+ 
+ ON CONFLICT (writer_id) DO UPDATE SET pending_bytes = pendingusage.pending_bytes + 1;",TRUE,addPendingUsage,-,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,no,,"contributor's answer shows why change cannot be made ""sqlite and postgres syntax for conflict is different. so need to figure out a clean way to do this""",related to discussion starting at line 311
+,"like this: SELECT pu.writer_id, pu.pending_bytes, uu.total_bytes, uu.errored FROM userusage uu, pendingusage pu WHERE uu.user_id = pu.user_id
+ 
+ AND uu.user_id = 1",TRUE,getUsage,-,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,yes,,,related to discussion starting at line 313
+,"like this: SELECT u.name FROM users u, writerusage wu WHERE u.id = wu.user_id AND wu.writer_id = 1",TRUE,getOwner,src/peergos/server/space/JdbcUsageStore.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,yes,,,related to discussion starting at line 315
+,"same deal as the other place. I guess if the call to updateWroterUsage() for the same writerId is never concurrent, then it should be ok.",TRUE,updateWriterUsage,src/peergos/server/space/JdbcUsageStore.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,yes,,,
+,different value 50 versus 1. Is that intended?,TRUE,buildEphemeralSqlite,src/peergos/server/Main.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,yes,,,
+,It is not unheard of for a connection to db server to fail. Should it attempt retry rather than failing?,TRUE,getConnection,src/peergos/server/corenode/JdbcIpnsAndSocial.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,no,,contributor's answers show why change is not needed,
+,what about setting db isolation level to serialization?,TRUE,getNonCommittingConnection,src/peergos/server/space/JdbcUsageStore.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,yes,,,
+,could pass in the 'live' connection to private methods like this.,TRUE,getUserId,src/peergos/server/space/JdbcUsageStore.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,yes,,no,,"- only variable name changed
+- contributor's answer shows why change is not needed",
+,My only thought is that if it is another connection it may not 'see' the changes made in the calling method. Not sure if new connection inherits transaction or is separate..,TRUE,getUserId,src/peergos/server/space/JdbcUsageStore.java,https://github.com/Peergos/Peergos/commit/1a522991e791dcbbc8cdae1648dd736977993418,no,,,,,related to comment at line 323
+https://github.com/atlasapi/atlas-deer/pull/405,`metricsModule.metrics()` creates a new registry every time. Store the value.,TRUE,contentBootstrapWorker,atlas-processing/src/main/java/org/atlasapi/system/bootstrap/workers/BootstrapWorkersModule.java,https://github.com/atlasapi/atlas-deer/commit/5f964a49e7e025e069892304dd45e67e43233a67,yes,,yes,,,
+,Is an unwritten content actually a failure? Wouldn't unchanged entities return false here as well?,TRUE,process,atlas-processing/src/main/java/org/atlasapi/system/bootstrap/workers/ContentBootstrapWorker.java,https://github.com/atlasapi/atlas-deer/commit/5f964a49e7e025e069892304dd45e67e43233a67,yes,,yes,,,
+,Uppercase `L` for numbers. This will at the very least fail Sonar.,TRUE,setUp,atlas-processing/src/test/java/org/atlasapi/system/bootstrap/workers/ContentBootstrapWorkerTest.java,https://github.com/atlasapi/atlas-deer/commit/5f964a49e7e025e069892304dd45e67e43233a67,yes,,yes,,,
+,Magic string that's copy-pasted. Extract variable.,TRUE,testReportingMigrationCorrectRawObjectIsSentAsPartOfTheEventReport,atlas-processing/src/test/java/org/atlasapi/system/bootstrap/workers/ContentBootstrapWorkerTest.java,https://github.com/atlasapi/atlas-deer/commit/5f964a49e7e025e069892304dd45e67e43233a67,yes,,yes,,,
+https://github.com/AltBeacon/android-beacon-library/pull/128,should the 0.1 be a configurable value? perhaps a static class member. Should the default value be bigger (per general issue),TRUE,addMeasurement,src/main/java/org/altbeacon/beacon/service/ArmaRssiFilter.java,https://github.com/AltBeacon/android-beacon-library/commit/64022f5e8173290abfc3d795a5cb6cd4f6531b07,yes,,yes,,,
+,Should do a LogManager.e here,TRUE,RangedBeacon,src/main/java/org/altbeacon/beacon/service/RangedBeacon.java,https://github.com/AltBeacon/android-beacon-library/commit/64022f5e8173290abfc3d795a5cb6cd4f6531b07,yes,,yes,,,
+,"setSampleExpirationMilliseconds needs to be retained for backwards compatibility. I suggest we change it to check to see if the filter is an instance of RunningAverageRssiFilter, and if so, call a method to set an equivalent value on the class. If it is not, log a warning saying this will do nothing.",TRUE,commitMeasurements,src/main/java/org/altbeacon/beacon/service/RangedBeacon.java,https://github.com/AltBeacon/android-beacon-library/commit/64022f5e8173290abfc3d795a5cb6cd4f6531b07,yes,,yes,,,
+https://github.com/JakeWharton/butterknife/pull/72,This whole file needs to be two-space indent,FALSE,injectingView,butterknife/src/test/java/butterknife/internal/InjectViewTest.java,https://github.com/JakeWharton/butterknife/commit/a47fee9cf3b2b0f8bfb816072bc018c5afe4b661,,no,,,,
+,Awkward indent. Should be four spaced indented from code left column.,FALSE,injectingView,butterknife/src/test/java/butterknife/internal/InjectViewTest.java,https://github.com/JakeWharton/butterknife/commit/a47fee9cf3b2b0f8bfb816072bc018c5afe4b661,,no,,,,
+,We have IntelliJ code styles here: https://github.com/square/java-code-styles,FALSE,injectingView,butterknife/src/test/java/butterknife/internal/InjectViewTest.java,https://github.com/JakeWharton/butterknife/commit/a47fee9cf3b2b0f8bfb816072bc018c5afe4b661,,no,,,,
+https://github.com/Automattic/simplenote-android/pull/1224,"Minor (🔍 ): Consider removing the cast to `NoteEditorActivity` for this case, it is not needed, isn't it?",TRUE,showDialogDeletePermanently,Simplenote/src/main/java/com/automattic/simplenote/utils/NoteUtils.java,https://github.com/Automattic/simplenote-android/commit/5266af6a72f7c0d45cea79dfbb0a05758c02acad,yes,,no,,contributor's answer shows why change is not needed,
+https://github.com/konik-io/konik/pull/54,"What is the reason to modify the data model when unmarshaling the invoice from XML.
+ 
+ In this case you can't make a guarantee that you read what the sender transmitted?",TRUE,unmarshal,-,https://github.com/konik-io/konik/commit/64afd346e4a291fcba158ace09a8a296f15fb95e,yes,,yes,,,
+https://github.com/ox-it/wl-feedback/pull/24,"If you don't care about the returned value (and you don't here) then you should be using `sqlService.dbWrite(String, Object[])`",TRUE,logReport,src/java/org/sakaiproject/feedback/db/Database.java,https://github.com/ox-it/wl-feedback/commit/9d06e5e5c615c149322c19f7c5cc5d110892fe29,yes,,yes,,,
+,You should probably be throwing an error when the insert fails so that an error gets returned to the client.,TRUE,logReport,src/java/org/sakaiproject/feedback/db/Database.java,https://github.com/ox-it/wl-feedback/commit/9d06e5e5c615c149322c19f7c5cc5d110892fe29,yes,,no,,error not thrown,in conflict with comment at line 337 (insert gets replaced with write)
+https://github.com/henrytao-me/smooth-app-bar-layout/pull/89,"This is better way to fix SwipeRefreshLayout issue. 
+ 
+ ```
+  private View getScrollTarget(View target) {
+  return mScrollTargetCallback != null ? mScrollTargetCallback.callback(target) : getSupportedScrollTarget(target);
+  }
+ 
+  private View getSupportedScrollTarget(View target) {
+  if (target instanceof SwipeRefreshLayout && ((SwipeRefreshLayout) target).getChildCount() > 0) {
+  SwipeRefreshLayout parent = (SwipeRefreshLayout) target;
+  View child;
+  int n = parent.getChildCount();
+  for (int i = 0; i < n; i++) {
+  child = parent.getChildAt(i);
+  if (child instanceof NestedScrollView || child instanceof RecyclerView) {
+  return child;
+  }
+  }
+  return ((SwipeRefreshLayout) target).getChildAt(0);
+  }
+  return target;
+  }
+ ```",TRUE,getScrollTarget,smooth-app-bar-layout/src/main/java/me/henrytao/smoothappbarlayout/BaseBehavior.java,https://github.com/henrytao-me/smooth-app-bar-layout/commit/accddbd608ca78b3987686f3375a3c6c2976e87c,yes,,yes,,,
+,"I think keeping this method is not a right design because `setScrollTargetCallback` is preferred to call in onCreate and should not be change in other states of Activity / Fragment lifecycle which mean calling this method is redundant. With the update yesterday, whenever `mScrollTargetCallback` is set, it will prioritize the result from this method first. So that, it's more flexible now. 
+ 
+ ```
+ return mScrollTargetCallback != null ? mScrollTargetCallback.callback(target) : getSupportedScrollTarget(target);
+ ```
+ 
+ I prefer not to keep `setBehaviorScrollTargetCallback` method and rollback some changes in `Behavior` class. The rest looks good to merge.",TRUE,setScrollTargetCallback,smooth-app-bar-layout/src/main/java/me/henrytao/smoothappbarlayout/SmoothAppBarLayout.java,https://github.com/henrytao-me/smooth-app-bar-layout/commit/accddbd608ca78b3987686f3375a3c6c2976e87c,yes,,yes,,,
+,"Hi @dammitt 
+ `setScrollTargetCallback` is used when you want to use another PullDownToRefresh library. In that case, you may want to point to correct `RecyclerView` or `NestedScrollView`. `SwipeRefreshLayout` is one of examples. 
+ 
+ There was an issue opened here https://github.com/henrytao-me/smooth-app-bar-layout/issues/15
+ 
+ Thanks for adding me to as collaborator. I will push the code today and merge your PR. Woot.",TRUE,setScrollTargetCallback,smooth-app-bar-layout/src/main/java/me/henrytao/smoothappbarlayout/SmoothAppBarLayout.java,https://github.com/henrytao-me/smooth-app-bar-layout/commit/accddbd608ca78b3987686f3375a3c6c2976e87c,no,,,,,related to discussion starting at line 340
+,"Hi @dammitt, 
+ 
+ I double check the code. You are right. It's my mistake when migrating from v1 to v2. Thanks.",TRUE,setScrollTargetCallback,smooth-app-bar-layout/src/main/java/me/henrytao/smoothappbarlayout/SmoothAppBarLayout.java,https://github.com/henrytao-me/smooth-app-bar-layout/commit/accddbd608ca78b3987686f3375a3c6c2976e87c,no,,,,,related to discussion starting at line 340
+https://github.com/hawkular/hawkular-command-gateway/pull/14,"I am not sure I like this returning the same object references because now it requires the command impementations to be thread-safe. I would prefer we return ""new .ABC()"" command each time. These objects aren't large and it won't be bad if we instantiate them each time... unless there is a reason for each request sharing the same command implememntation? Typically, sharing implementations like this across requests scare me because it requires us to be very, very careful about concurrency issues. I don't think we need to open ourselves up to that risk here - I think it would be safer to just return new objects for each ""getCommand"" call.",FALSE,getCommand,hawkular-command-gateway-war/src/main/java/org/hawkular/cmdgw/command/ws/WsCommands.java,https://github.com/hawkular/hawkular-command-gateway/commit/90a3e1b110a40f25efc6cbd50385ce8915b2aecb,,no,,,,
+,"here is an example of where endpoint is being used to log a message and it probably won't be want you want. You would like it to log ""feed/123456789"" where ""123456789"" is the actually feed Id, but instead I think it will be showing ""feed/{feedId}"" - not what we want.",FALSE,authenticate,hawkular-command-gateway-war/src/main/java/org/hawkular/cmdgw/command/ws/server/AbstractGatewayWebSocket.java,https://github.com/hawkular/hawkular-command-gateway/commit/90a3e1b110a40f25efc6cbd50385ce8915b2aecb,,no,,,,
+,"here is where ""endpoint"" again will not be very helpful. You want to log the actual feed ID string, not ""feed/{feedId}""",FALSE,feedSessionOpen,hawkular-command-gateway-war/src/main/java/org/hawkular/cmdgw/command/ws/server/FeedWebSocket.java,https://github.com/hawkular/hawkular-command-gateway/commit/90a3e1b110a40f25efc6cbd50385ce8915b2aecb,,no,,,,
+,"oh, yeah, that's right - session id _is_ the feed id. yes, ok, then this log message doesn't lose anything then.",FALSE,authenticate,hawkular-command-gateway-war/src/main/java/org/hawkular/cmdgw/command/ws/server/AbstractGatewayWebSocket.java,https://github.com/hawkular/hawkular-command-gateway/commit/90a3e1b110a40f25efc6cbd50385ce8915b2aecb,,no,,,,
+,"variable name ""topic"" should be renamed",FALSE,execute,hawkular-command-gateway-war/src/main/java/org/hawkular/cmdgw/command/ws/ResourcePathDestinationWsCommand.java,https://github.com/hawkular/hawkular-command-gateway/commit/90a3e1b110a40f25efc6cbd50385ce8915b2aecb,,no,,,,
+https://github.com/drtshock/PlayerVaults/pull/342,This has to be 1 or it'll cause issues if someone else is still viewing the vault when a player closes the inventory.,TRUE,saveVault,src/main/java/com/drtshock/playervaults/listeners/Listeners.java,https://github.com/drtshock/PlayerVaults/commit/32036f450240734bfa80c9f2b46df5ad83486bf5,yes,,yes,,,
+https://github.com/akallem/Words/pull/111,"I think technically this check is not necessary, since the remove() method says it removes a key if it exists and does nothing if not.",FALSE,removeObject,src/words/environment/Environment.java,https://github.com/akallem/Words/commit/51c8fe002bf5561f6fd1b9fbdbbeb899566f10e1,yes,,yes,,,
+,The same would apply here; I think this check is actually unnecessary.,FALSE,removeObject,src/words/environment/Environment.java,https://github.com/akallem/Words/commit/51c8fe002bf5561f6fd1b9fbdbbeb899566f10e1,yes,,yes,,,mentions comment at line 349
+,"Does this really need to be done as a loop? objectsByClass is a HashMap from WordsClass to the HashSet. And the WordsObject knows it's WordsClass. So couldn't be just use the HashMap to lookup the appropriate HashSet, and then remove the WordsObject from that HashSet immediately?",FALSE,removeObject,src/words/environment/Environment.java,https://github.com/akallem/Words/commit/51c8fe002bf5561f6fd1b9fbdbbeb899566f10e1,yes,,yes,,,
+,"I'm not sure about that. According to the specification, the keySet isn't a copy, it's backed by the original map, so changes to the map during iteration result in undefined behavior: https://docs.oracle.com/javase/7/docs/api/java/util/Map.html#keySet()",FALSE,clearReferers,src/words/environment/WordsObject.java,https://github.com/akallem/Words/commit/51c8fe002bf5561f6fd1b9fbdbbeb899566f10e1,yes,,yes,,,"related to another comment at start of discussion: ""Since we're modifying the list of referers while we're in the loop, I think we need to use the iterator syntax rather than this ""enhanced for loop"" shorthand. You can see how Wangda did it in event listeners in the frame loop. See this post for details:..."""
+https://github.com/jbosstools/jbosstools-hibernate/pull/191,"are you really sure that such exceptions won't need at least to be logged?
+ 
+ 
+ 
+ Make sure that we can help people understand what's wrong, and that you have enough diagnostic data, when some bugfixes will be reported.",TRUE,populateComboBox,-,https://github.com/jbosstools/jbosstools-hibernate/commit/010db801a0873a449eb150523056585712ad7b41,yes,,yes,,,
+https://github.com/mulesoft/apikit-odata-extension/pull/13,"This code is executed during each request, isn't a better approach transform this initialization to something static?",TRUE,process,src/main/java/org/mule/module/apikit/odata/ODataRouterService.java,https://github.com/mulesoft/apikit-odata-extension/commit/edf24777d3aa4c37a5ef076ffd08477cac8bbb95,yes,,yes,,,
+,"Yes, I created a ticket for tracking this",TRUE,process,src/main/java/org/mule/module/apikit/odata/ODataRouterService.java,https://github.com/mulesoft/apikit-odata-extension/commit/edf24777d3aa4c37a5ef076ffd08477cac8bbb95,no,,,,,related to discussion starting at line 354
+,Is this block still needed? because it was a workaround,TRUE,getProtocol,src/main/java/org/mule/module/apikit/odata/processor/ODataRequestProcessor.java,https://github.com/mulesoft/apikit-odata-extension/commit/edf24777d3aa4c37a5ef076ffd08477cac8bbb95,yes,,yes,,,
+,"Can the payload value be null? In that case, we'll get an NPE when executing `toString`",TRUE,getPayloadAsString,src/main/java/org/mule/module/apikit/odata/util/CoreEventUtils.java,https://github.com/mulesoft/apikit-odata-extension/commit/edf24777d3aa4c37a5ef076ffd08477cac8bbb95,yes,,yes,,,
+,"In the previous version, we are returning an empty list whether the payload is null, but here we are throwing an exception",TRUE,verifyFlowResponse,src/main/java/org/mule/module/apikit/odata/processor/ODataApikitProcessor.java,https://github.com/mulesoft/apikit-odata-extension/commit/edf24777d3aa4c37a5ef076ffd08477cac8bbb95,yes,,no,,exception is still present,
+,And keep in mind what I mentioned about null values returned by `getPayloadAsString` method,TRUE,verifyFlowResponse,src/main/java/org/mule/module/apikit/odata/processor/ODataApikitProcessor.java,https://github.com/mulesoft/apikit-odata-extension/commit/edf24777d3aa4c37a5ef076ffd08477cac8bbb95,yes,,yes,,,
+https://github.com/oicr-gsi/pipedev/pull/109,This should be a call to the logger and not to System.err (throughout this class).,TRUE,attachCVterms,pipedev-workflow-utils/src/main/java/ca/on/oicr/pde/utilities/workflows/SemanticWorkflow.java,https://github.com/oicr-gsi/pipedev/commit/29892cae538af86569140c38e3679081e921f4a8,yes,,yes,,,
+,Is it a good idea to have this hardcoded as 9999? I know it's testing but I can see some future us shaking our fists because we can't launch tests because the port is hardcoded.,TRUE,setupPinery,pipedev-decider-utils/src/test/java/ca/on/oicr/pde/deciders/MergingDeciderBaseIT.java,https://github.com/oicr-gsi/pipedev/commit/29892cae538af86569140c38e3679081e921f4a8,yes,,no,,port number still hardcoded,
+https://github.com/Terasology/Sample/pull/107,"We always use brackets, even if the if only has one statement. Same goes for the else clause below.",TRUE,initialise,src/main/java/org/terasology/nui/StuffLengthsScreen.java,https://github.com/Terasology/Sample/commit/5614ef9a53cc0737dc2d9e1e1086263a0e5702ce,yes,,yes,,,
+https://github.com/yegor256/takes/pull/526,"@alexey-krylov why do we need `AtomicReference` here?
+ `BkBasic` doesn't use threads as I know",FALSE,addressesInHeadersAddedWithoutSlashes,src/test/java/org/takes/http/BkBasicTest.java,https://github.com/yegor256/takes/commit/863912fa057c2b96601e3281174757db2b3ad85f,yes,,no,,"- commented code did not change
+- further comment (see line 367) asks to revert change and keep using atomic reference",change between commits is not considered
+,"@alexey-krylov I think this matcher and below will be enough for the test
+ we have a ticket 'there is an exception on get...()', so you reproduced the problem and fix it",FALSE,addressesInHeadersAddedWithoutSlashes,src/test/java/org/takes/http/BkBasicTest.java,https://github.com/yegor256/takes/commit/863912fa057c2b96601e3281174757db2b3ad85f,yes,,yes,,,
+,"@alexey-krylov I think it can be like this
+ 
+ ```
+ final Request request;
+ ....
+  public Response act(final Request req) {
+  request = req;
+  return new RsEmpty();
+ ....
+ ).accept(socket);
+ ```",FALSE,addressesInHeadersAddedWithoutSlashes,src/test/java/org/takes/http/BkBasicTest.java,https://github.com/yegor256/takes/commit/863912fa057c2b96601e3281174757db2b3ad85f,yes,,no,,contributor's answer shows why change is not possible ,
+,"@alexey-krylov you can extract a header from the request like this
+ 
+ ```
+  new RqHeaders.Smart(new RqHeaders.Base(request)).single(<header name>)
+ ```
+ 
+ or with default value
+ 
+ ```
+  new RqHeaders.Smart(new RqHeaders.Base(request)).single(<header name>, <default>)
+ ```",FALSE,addressesInHeadersAddedWithoutSlashes,src/test/java/org/takes/http/BkBasicTest.java,https://github.com/yegor256/takes/commit/863912fa057c2b96601e3281174757db2b3ad85f,yes,,yes,,,related to discussion starting at line 364
+,"@alexey-krylov right :) my bad, let's revert back to AtomicReference",FALSE,addressesInHeadersAddedWithoutSlashes,src/test/java/org/takes/http/BkBasicTest.java,https://github.com/yegor256/takes/commit/863912fa057c2b96601e3281174757db2b3ad85f,yes,,yes,,,related to discussion starting at line 365
+https://github.com/genome-nexus/genome-nexus/pull/181,"Yeah also we would have to keep the dump in sync. It's most comprehensible I think to only import the relevant data for testing, so it's easy to see what kind of data is expected. You can use e.g. `jq` to get the relevant data.
+ 
+ 
+ 
+ Or if necessary to have the full dump, do a complete integration and use the actual data that we would import instead of having to sync this file.",TRUE,readMockFile,-,https://github.com/genome-nexus/genome-nexus/commit/1e342fdf3360b91633f5bd5c2c67b484e0ca7529,yes,,yes,,,
+https://github.com/wso2/carbon-ml/pull/140,You have to close all the streams.,FALSE,exportAsPMML,components/ml/org.wso2.carbon.ml.core/src/main/java/org/wso2/carbon/ml/core/impl/MLModelHandler.java,https://github.com/wso2/carbon-ml/commit/1c64e51dae5d4cfa3dc276d58564194f94cf7fde,yes,,yes,,,no need to close streams as they were removed
+,Is it possible to print the model in the log?,FALSE,exportAsPMML,components/ml/org.wso2.carbon.ml.core/src/main/java/org/wso2/carbon/ml/core/impl/MLModelHandler.java,https://github.com/wso2/carbon-ml/commit/1c64e51dae5d4cfa3dc276d58564194f94cf7fde,yes,,no,,commented method did not change,
+,formatted?,FALSE,getPMMLExportable,components/ml/org.wso2.carbon.ml.core/src/main/java/org/wso2/carbon/ml/core/spark/models/MLGeneralizedLinearModel.java,https://github.com/wso2/carbon-ml/commit/1c64e51dae5d4cfa3dc276d58564194f94cf7fde,yes,,no,,commented method did not change,
+,We have an enum for pmml right?,FALSE,getPMMLAvailability,components/ml/org.wso2.carbon.ml.rest.api/src/main/java/org/wso2/carbon/ml/rest/api/ConfigurationApiV11.java,https://github.com/wso2/carbon-ml/commit/1c64e51dae5d4cfa3dc276d58564194f94cf7fde,yes,,yes,,,
+,typo in download.,FALSE,getPMMLAvailability,components/ml/org.wso2.carbon.ml.rest.api/src/main/java/org/wso2/carbon/ml/rest/api/ConfigurationApiV11.java,https://github.com/wso2/carbon-ml/commit/1c64e51dae5d4cfa3dc276d58564194f94cf7fde,yes,,yes,,,
+https://github.com/iFixit/iFixitAndroid/pull/185,"I think we should add an `_` in between the userid and the url, if the URL ends with an integer, it'd be difficult to decifer what's the userid and what's the url. Probably not an issue that would come up, but I thought I'd bring it up.",TRUE,getCacheKey,App/src/com/dozuki/ifixit/util/api/Api.java,https://github.com/iFixit/iFixitAndroid/commit/ab9e6daef0fa50c026bc668b96731e7e46d865a7,yes,,yes,,,
+https://github.com/waarp/WaarpCommon/pull/92,"Return value should not be discarded: if the server starts with an invalid certificate, it should not start at all.
+ 
+ Here, it will still be used, allowing insecure connections to be possible.",TRUE,initKeyStore,-,https://github.com/waarp/WaarpCommon/commit/b67621fc74aaf79b6f44a19bc34f023752783410,yes,,no,,commented code did not change,
+,Can you keep it in the form of a Messages.getString(...) message for i18n ?,TRUE,validateKeyStore,src/main/java/org/waarp/common/crypto/ssl/WaarpSecureKeyStore.java,https://github.com/waarp/WaarpCommon/commit/b67621fc74aaf79b6f44a19bc34f023752783410,yes,,no,,commented code did not change,
+,Can you keep it in the form of a Messages.getString(...) message for i18n ?,TRUE,validateKeyFromKeyStore,src/main/java/org/waarp/common/crypto/ssl/WaarpSecureKeyStore.java,https://github.com/waarp/WaarpCommon/commit/b67621fc74aaf79b6f44a19bc34f023752783410,yes,,no,,Messages.getString() not used,
+https://github.com/triplea-game/triplea/pull/5880,Would `Function.identity()` work here?,TRUE,findIslands,game-core/src/main/java/games/strategy/triplea/ui/mapdata/IslandTerritoryFinder.java,https://github.com/triplea-game/triplea/commit/30db1cf9bbb5abcdae68b00cc6283f65c13fb9fb,yes,,yes,,,
+,"Another quick thought:
+ 
+ What about making this class non-static and make the polygon map an actual field?
+ 
+ This way a lot of lambdas could be turned into private methods and there would be no need to pass this map to almost every method.",TRUE,findIslands,-,https://github.com/triplea-game/triplea/commit/30db1cf9bbb5abcdae68b00cc6283f65c13fb9fb,yes,,no,,contributor's answer shows why change is not needed,suggested change related to whole class
+https://github.com/jenkinsci/gradle-plugin/pull/63,Can we keep the injected field and use the static lookup only if the field is `null`? This logic should probably also extracted into a `getGradleDescriptor` method.,TRUE,DescriptorImpl,src/main/java/hudson/plugins/gradle/GradleInstallation.java,https://github.com/jenkinsci/gradle-plugin/commit/f429dbeff657d510f0c59b8e421f0aa50b617f9c,yes,,no,,"only suggested extraction implemented, contributor's answer shows why rest of change is not needed",
+https://github.com/jGleitz/JUnit-KIT/pull/148,Some program logic might not throw an error when creating an ant on a field with an ant of the same name.,FALSE,createAntOnBlockedCellTest,src/final2/subtests/InvalidCommandTest.java,https://github.com/jGleitz/JUnit-KIT/commit/6b8096244dad1958169b291fe03ffef32fb6283a,,,,,,
+,"> And I don't think that somebody checks for the case, that this cell's ant has the same name as the current ant and handle this special case separately.
+ 
+ Someone might try to create a ""smart"" program and think this was not an error.
+ Or some silly things like somebody clones their field array, sets the new ant and then checks for duplicates.
+ It's certainly possible to ([un]intentionally) have program logic like that.",FALSE,createAntOnBlockedCellTest,src/final2/subtests/InvalidCommandTest.java,https://github.com/jGleitz/JUnit-KIT/commit/6b8096244dad1958169b291fe03ffef32fb6283a,,,,,,
+,"If the input file doesn't matter, please don't reassign it before the test run (It's hard to read, especially for such a detailed test)",FALSE,invalidAntNameTest,src/final2/subtests/InvalidCommandTest.java,https://github.com/jGleitz/JUnit-KIT/commit/6b8096244dad1958169b291fe03ffef32fb6283a,,,,,,
+,Just use `TASK_SHEET_INPUT_FILE1` or any other of the predefined files from `LangtonTest`. (Another advantage: We already know the tested class can read in this file),FALSE,invalidAntNameTest,src/final2/subtests/InvalidCommandTest.java,https://github.com/jGleitz/JUnit-KIT/commit/6b8096244dad1958169b291fe03ffef32fb6283a,,,,,,
+,"There are more occurrences of this, I won't mark everyone.",FALSE,invalidAntNameTest,src/final2/subtests/InvalidCommandTest.java,https://github.com/jGleitz/JUnit-KIT/commit/6b8096244dad1958169b291fe03ffef32fb6283a,,,,,,
+https://github.com/zifeo/Yields/pull/13,I think we should avoid printing stack traces and make the app crash... Could we setup an error activity or handle the error as transparent?,FALSE,onCreate,client/app/src/main/java/yields/client/activities/MessageActivity.java,https://github.com/zifeo/Yields/commit/c7180af2cbf7675159e2c64c45f612cd346aa4cb,,,,,,
+,`mCaption = Objects.requireNonNull(caption);`,FALSE,ImageContent,client/app/src/main/java/yields/client/messages/ImageContent.java,https://github.com/zifeo/Yields/commit/c7180af2cbf7675159e2c64c45f612cd346aa4cb,,,,,,
+,"If the list of users stays the same, make it unmodifiable in the class constructor.",FALSE,getUsers,client/app/src/main/java/yields/client/node/Group.java,https://github.com/zifeo/Yields/commit/c7180af2cbf7675159e2c64c45f612cd346aa4cb,,,,,,
+,"Or even better, `this.mName = Objects.requireNonNull(name);`. To be check everywhere else.",FALSE,Node,client/app/src/main/java/yields/client/node/Node.java,https://github.com/zifeo/Yields/commit/c7180af2cbf7675159e2c64c45f612cd346aa4cb,,,,,,
+,Error message? To be checked everywhere else too.,FALSE,GroupCreateRequest,client/app/src/main/java/yields/client/serverconnection/RequestBuilder.java,https://github.com/zifeo/Yields/commit/c7180af2cbf7675159e2c64c45f612cd346aa4cb,,,,,,
+,`datetime` is collapsed.,FALSE,request,client/app/src/main/java/yields/client/serverconnection/RequestBuilder.java,https://github.com/zifeo/Yields/commit/c7180af2cbf7675159e2c64c45f612cd346aa4cb,,,,,,
+https://github.com/jenkinsci/ssh-slaves-plugin/pull/55,"Use `hudson.Util.fixEmptyAndTrim()`. It will also convert blank lines to null, which is maybe required here",FALSE,SSHLauncher,src/main/java/hudson/plugins/sshslaves/SSHLauncher.java,https://github.com/jenkinsci/ssh-slaves-plugin/commit/184b31431c70378c984d31411f9b1aa3d1621995,,,,,,
+https://github.com/dana-i2cat/opennaas/pull/106,"to get the resource, you have a method in GenericKarafCommand you may found useful:
+ getResourceFromFriendlyId or something similar. ;)",TRUE,doExecute,extensions/bundles/queuemanager/src/main/java/org/opennaas/extensions/queuemanager/shell/ClearCommand.java,https://github.com/dana-i2cat/opennaas/commit/a0dab42fe50cf8c7939eda968020fb1fe00fe11c,,,,,,
+,"Why sendMessage()?
+ 
+ This cloud be queue.clear()...",TRUE,doExecute,extensions/bundles/queuemanager/src/main/java/org/opennaas/extensions/queuemanager/shell/ClearCommand.java,https://github.com/dana-i2cat/opennaas/commit/a0dab42fe50cf8c7939eda968020fb1fe00fe11c,,,,,,
+,"Yes, sorry, I meant empty() ;)",TRUE,doExecute,extensions/bundles/queuemanager/src/main/java/org/opennaas/extensions/queuemanager/shell/ClearCommand.java,https://github.com/dana-i2cat/opennaas/commit/a0dab42fe50cf8c7939eda968020fb1fe00fe11c,,,,,,
+https://github.com/admoore9/cs309t13/pull/55,I don't think this if statement is necessary as you perform the same action in the else,TRUE,getMail,src/main/java/edu/iastate/controllers/MailController.java,https://github.com/admoore9/cs309t13/commit/44993f8f600321e10dc48a674f44f26c6aff9ffd,,,,,,
+,Shouldn't this already be set?,TRUE,setMessageAsViewed,src/main/java/edu/iastate/controllers/MailController.java,https://github.com/admoore9/cs309t13/commit/44993f8f600321e10dc48a674f44f26c6aff9ffd,,,,,,
+,/denied also works instead of working with relative paths,TRUE,doesRecipientExist,src/main/java/edu/iastate/controllers/MailController.java,https://github.com/admoore9/cs309t13/commit/44993f8f600321e10dc48a674f44f26c6aff9ffd,,,,,,
+,Should use /denied here as well,TRUE,send,src/main/java/edu/iastate/controllers/MailController.java,https://github.com/admoore9/cs309t13/commit/44993f8f600321e10dc48a674f44f26c6aff9ffd,,,,,,
+,"I think it's impossible for people other than the team leader to be on the team at this point, so the loop should be unnecessary",TRUE,addTeamToTournament,src/main/java/edu/iastate/controllers/TournamentController.java,https://github.com/admoore9/cs309t13/commit/44993f8f600321e10dc48a674f44f26c6aff9ffd,,,,,,
+,"What is this method meant for? What is the ""Intramurals"" username?",TRUE,notify,src/main/java/edu/iastate/dao/MessageDao.java,https://github.com/admoore9/cs309t13/commit/44993f8f600321e10dc48a674f44f26c6aff9ffd,,,,,,
+,"Oh yep, missed that",TRUE,setMessageAsViewed,src/main/java/edu/iastate/controllers/MailController.java,https://github.com/admoore9/cs309t13/commit/44993f8f600321e10dc48a674f44f26c6aff9ffd,,,,,,
+,We need to change the way we get the session. Check my PR for how to do this. I've updated all of the controllers.,TRUE,getMail,src/main/java/edu/iastate/controllers/MailController.java,https://github.com/admoore9/cs309t13/commit/44993f8f600321e10dc48a674f44f26c6aff9ffd,,,,,,
+,Should this still be in here?,TRUE,notify,src/main/java/edu/iastate/dao/MessageDao.java,https://github.com/admoore9/cs309t13/commit/44993f8f600321e10dc48a674f44f26c6aff9ffd,,,,,,
+,Don't quite understand exactly what these params are for.,TRUE,getMail,src/main/java/edu/iastate/controllers/MailController.java,https://github.com/admoore9/cs309t13/commit/44993f8f600321e10dc48a674f44f26c6aff9ffd,,,,,,
+,"Ohh, ok. That make sense.",TRUE,notify,src/main/java/edu/iastate/dao/MessageDao.java,https://github.com/admoore9/cs309t13/commit/44993f8f600321e10dc48a674f44f26c6aff9ffd,,,,,,
+https://github.com/MountainRange/MULE/pull/32,"This logic is duplicated 3 times, could you move it to a private method or move this logic out of this controller?",FALSE,handleExchangeFoodAction,src/main/java/io/github/mountainrange/mule/controllers/StoreController.java,https://github.com/MountainRange/MULE/commit/206d6fe7960f37f4cfe0c9aa40765a1ce4069939,,,,,,
+,"Consider using string formatting rather than string concatenation, and refactoring this to include some temporary variables, so that it looks nicer.",FALSE,setLabels,src/main/java/io/github/mountainrange/mule/GameManager.java,https://github.com/MountainRange/MULE/commit/206d6fe7960f37f4cfe0c9aa40765a1ce4069939,,,,,,
+https://github.com/HPI-Information-Systems/Metanome/pull/162,I think it would be faster to use a bitset operation (not) to invert and then call the constructor taking an OpenBitSet,FALSE,invert,algorithm_helper/src/main/java/de/uni_potsdam/hpi/metanome/algorithm_helper/data_structures/ColumnCombinationBitset.java,https://github.com/HPI-Information-Systems/Metanome/commit/3f364e35165dc197fb62ca992ade936e1dfb60cf,,,,,,
+,"maybe even better using the setColumns method:
+ 1. create new ColumnCombinationBitset using empty constructor call
+ 2. invert a cloned bitset
+ 3. set the inverted bitset
+ 
+ the size will be computed by the new bitset when the bitset is set.
+ I guess it is a matter of taste...",FALSE,invert,algorithm_helper/src/main/java/de/uni_potsdam/hpi/metanome/algorithm_helper/data_structures/ColumnCombinationBitset.java,https://github.com/HPI-Information-Systems/Metanome/commit/3f364e35165dc197fb62ca992ade936e1dfb60cf,,,,,,
+https://github.com/SmartReceipts/SmartReceiptsLibrary/pull/192,"This looks good! Let's now move it into a Presenter class like `AutoCompeltePresenter` or `TripAutoCompeltePresenter`, so we can isolate all the logic in that one class (instead of spreading it across the fragment)",FALSE,onResume,app/src/main/java/co/smartreceipts/android/trips/editor/TripCreateEditFragment.java,https://github.com/SmartReceipts/SmartReceiptsLibrary/commit/82c9caad3f569133ca9b92a297da5111d6087d58,,,,,,
+,"Let's change the signature here from `<Pair<Trip, Trip>` to a new dataclass like:
+ 
+ 
+ 
+ ```
+ 
+ data class AutoCompleteClickEvent<Type> (
+ 
+  val from: Type,
+ 
+  val to: Type
+ 
+ )
+ 
+ ```
+ 
+ 
+ 
+ So it's a bit clearer what the `first` and `second` in this pair do",FALSE,getHideAutoCompleteVisibilityClick,-,https://github.com/SmartReceipts/SmartReceiptsLibrary/commit/82c9caad3f569133ca9b92a297da5111d6087d58,,,,,,
+,"@HeinousGames - Let's change it to version `21`, since we didn't cut this into this new release (which is for v20)",FALSE,onUpgrade,app/src/main/java/co/smartreceipts/android/persistence/database/tables/PaymentMethodsTable.java,https://github.com/SmartReceipts/SmartReceiptsLibrary/commit/82c9caad3f569133ca9b92a297da5111d6087d58,,,,,,
+https://github.com/cloudfoundry/uaa/pull/1194,"Is there any value to this null check? Even if it is null, this operation doesn't make any sense if we can't access the session.",TRUE,saveStateParamForIdpToRequestSession,server/src/main/java/org/cloudfoundry/identity/uaa/provider/oauth/XOAuthProviderConfigurator.java,https://github.com/cloudfoundry/uaa/commit/565b848a4cd07e86fd63c3d013b419cc7796e699,,,,,,
+https://github.com/forge/core/pull/619,In this case perhaps we should remove from the enum?,TRUE,decorateSource,javaee/impl/src/main/java/org/jboss/forge/addon/javaee/jpa/ui/JPANewEntityCommandImpl.java,https://github.com/forge/core/commit/03fd421fe95b28b53cf5ab782a7fd5c2edcac9f8,,,,,,
+,You can use a lambda here:`idClass.setRequired(() -> idType.getValue() == EntityIdType.EMBEDDED_ID);`,TRUE,initializeUI,javaee/impl/src/main/java/org/jboss/forge/addon/javaee/jpa/ui/JPANewEntityCommandImpl.java,https://github.com/forge/core/commit/03fd421fe95b28b53cf5ab782a7fd5c2edcac9f8,,,,,,
+,"Ah right, I thought that wasn't temporary, that's fine :+1:",TRUE,decorateSource,javaee/impl/src/main/java/org/jboss/forge/addon/javaee/jpa/ui/JPANewEntityCommandImpl.java,https://github.com/forge/core/commit/03fd421fe95b28b53cf5ab782a7fd5c2edcac9f8,,,,,,
+,Typo in `Unknown`,TRUE,decorateSource,javaee/impl/src/main/java/org/jboss/forge/addon/javaee/jpa/ui/JPANewEntityCommandImpl.java,https://github.com/forge/core/commit/03fd421fe95b28b53cf5ab782a7fd5c2edcac9f8,,,,,,
+https://github.com/GoogleCloudPlatform/cloud-trace-java/pull/36,I think it looks a little better to have the TraceSource still return a Trace.,TRUE,generateStartSpan,sdk/v1/src/main/java/com/google/cloud/trace/v1/source/TraceSource.java,https://github.com/GoogleCloudPlatform/cloud-trace-java/commit/f24cc7e7db22d95ebd3eda34574d688f47b93387,,,,,,
+https://github.com/infinispan/infinispan/pull/6318,IMO we could just throw an exception instead of complicating the code,TRUE,BaseClientEventSender,server/hotrod/src/main/java/org/infinispan/server/hotrod/ClientListenerRegistry.java,https://github.com/infinispan/infinispan/commit/8db0b82586910580a1d4f0f737f72017fb178f7e,,,,,,
+,"I think we should use `eventQueue.offer(remoteEvent, remoteTimeout, MILLISECONDS)` here, so we eventually time out and report an exception.",TRUE,BaseClientEventSender,server/hotrod/src/main/java/org/infinispan/server/hotrod/ClientListenerRegistry.java,https://github.com/infinispan/infinispan/commit/8db0b82586910580a1d4f0f737f72017fb178f7e,,,,,,
+,"TBH I'm still a little confused why we would ever keep the event loop busy while we are running any cache operation. I mean that prevents any other thread from reading from the channel, so the server is going to spend a lot of time twiddling its thumbs unless there are lots of clients per server. I understand that we wouldn't want to incur a context switch to process short requests, but couldn't we allow another thread to start reading from/writing to the channel while we are doing some other work?",TRUE,BaseClientEventSender,server/hotrod/src/main/java/org/infinispan/server/hotrod/ClientListenerRegistry.java,https://github.com/infinispan/infinispan/commit/8db0b82586910580a1d4f0f737f72017fb178f7e,,,,,,
+,"We should trigger a perf ack job with and without passing requests to another thread pool again, but I'd argue that even the serialization of read results could be heavy enough to justify doing it on another thread.",TRUE,BaseClientEventSender,server/hotrod/src/main/java/org/infinispan/server/hotrod/ClientListenerRegistry.java,https://github.com/infinispan/infinispan/commit/8db0b82586910580a1d4f0f737f72017fb178f7e,,,,,,
+https://github.com/wso2/carbon-business-messaging/pull/356,Do we need these logs? :),TRUE,getPaginatedTopicTree,components/andes/org.wso2.carbon.andes.event.core/src/main/java/org/wso2/carbon/andes/event/core/internal/subscription/registry/TopicManagerServiceImpl.java,https://github.com/wso2/carbon-business-messaging/commit/27370b538acde9304ce146546937c818035d4e47,,,,,,
+,no we don't!,TRUE,getPaginatedTopicTree,components/andes/org.wso2.carbon.andes.event.core/src/main/java/org/wso2/carbon/andes/event/core/internal/subscription/registry/TopicManagerServiceImpl.java,https://github.com/wso2/carbon-business-messaging/commit/27370b538acde9304ce146546937c818035d4e47,,,,,,
+,as far as I remember there path separator used to be defined in reg constants .,TRUE,buildTopicTree,components/andes/org.wso2.carbon.andes.event.core/src/main/java/org/wso2/carbon/andes/event/core/internal/subscription/registry/TopicManagerServiceImpl.java,https://github.com/wso2/carbon-business-messaging/commit/27370b538acde9304ce146546937c818035d4e47,,,,,,
+https://github.com/osate/osate-ge/pull/287,Is there a reason diagramType is created above where it is initialized?,TRUE,createAgeDiagram,org.osate.ge/src/org/osate/ge/internal/diagram/runtime/DiagramSerialization.java,https://github.com/osate/osate-ge/commit/450df2f77f4fd977657515cffdc68563cd4eb1b0,,,,,,
+,Extra semicolon,TRUE,execute,org.osate.ge/src/org/osate/ge/internal/ui/handlers/GoToImplementationDiagramHandler.java,https://github.com/osate/osate-ge/commit/450df2f77f4fd977657515cffdc68563cd4eb1b0,,,,,,
+https://github.com/jboss-developer/jboss-jdg-quickstarts/pull/212,I would move the `tm.commit()` to a `finally` block,TRUE,addTeam,hotrod-transactions/src/main/java/org/jboss/as/quickstarts/datagrid/hotrod/FootballManager.java,https://github.com/jboss-developer/jboss-jdg-quickstarts/commit/2c1569ff37bcc5a828d1baa228c445e75fcdc938,,,,,,
+,"I think you should start the transaction before `retrieveTeam()`. Otherwise, the getter to retrieve the team from the cache will happen outside the transaction.",TRUE,addPlayers,hotrod-transactions/src/main/java/org/jboss/as/quickstarts/datagrid/hotrod/FootballManager.java,https://github.com/jboss-developer/jboss-jdg-quickstarts/commit/2c1569ff37bcc5a828d1baa228c445e75fcdc938,,,,,,
+,"if `putIfAbsent()` throws an exception, the `tm.commit()` won't be invoked ever... The transaction will be open forever... the next `tm.begin()` call will fail as well since there is a transaction in progress.",TRUE,addTeam,hotrod-transactions/src/main/java/org/jboss/as/quickstarts/datagrid/hotrod/FootballManager.java,https://github.com/jboss-developer/jboss-jdg-quickstarts/commit/2c1569ff37bcc5a828d1baa228c445e75fcdc938,,,,,,
+,"an exception in the client code doesn't change the transaction status. The user is free to do what is best for its use case. You can retry the putIfAbsent, you can ignore the exception or you can rollback the transaction. Only implicit transactions are handled in Infinispan's code
+ 
+ 
+ 
+ commit() or rollback() can throw exceptions. in your demo, they can be ignored and print an error message.",TRUE,addTeam,-,https://github.com/jboss-developer/jboss-jdg-quickstarts/commit/2c1569ff37bcc5a828d1baa228c445e75fcdc938,,,,,,
+https://github.com/hal/core/pull/77,I would turn the `selectionModel`into a member variable.,TRUE,updateEndpoints,gui/src/main/java/org/jboss/as/console/client/shared/runtime/ws/WebServiceRuntimeView.java,https://github.com/hal/core/commit/324c80ba5b847a97cbe0bcb3f1f5206673596722,,,,,,
+,"Let's add a private method 
+ 
+ ``` java
+ private void addSample(WebServiceEndpoint endpoint) {
+  if endpoint != null) {
+  sampler.addSample(new Metric(
+  selection.getRequestCount(),
+  selection.getResponseCount(),
+  selection.getFaultCount()));
+  }
+ }
+ ```
+ 
+ which is called from the selection changed handler and the `updateEndpoints` method.",TRUE,updateEndpoints,gui/src/main/java/org/jboss/as/console/client/shared/runtime/ws/WebServiceRuntimeView.java,https://github.com/hal/core/commit/324c80ba5b847a97cbe0bcb3f1f5206673596722,,,,,,
+,Please use the member variable `selectionModel`,TRUE,updateEndpoints,gui/src/main/java/org/jboss/as/console/client/shared/runtime/ws/WebServiceRuntimeView.java,https://github.com/hal/core/commit/324c80ba5b847a97cbe0bcb3f1f5206673596722,,,,,,
+https://github.com/spacewalkproject/spacewalk/pull/330,"Compilation error? Please check and resubmit!
+ 
+ ```
+ [javac] /builddir/build/BUILD/spacewalk-java-git-3.c90b394/code/src/com/redhat/rhn/frontend/taglibs/helpers/RenderUtils.java:90: error: cannot find symbol
+ [javac] URL url = request.getServletContext().getResource(menuDefinition);
+ [javac] ^
+ [javac] symbol: method getServletContext()
+ [javac] location: variable request of type HttpServletRequest
+ ```",TRUE,-,java/code/src/com/redhat/rhn/frontend/taglibs/helpers/RenderUtils.java,https://github.com/spacewalkproject/spacewalk/commit/3a632b464aff2a3d23528d406a2eebc13e6b3049,,,,,,
+https://github.com/stleary/JSON-java/pull/529,"change to
+ 
+ ```java
+ 
+ this.myArrayList.ensureCapacity(this.myArrayList.size() + length);
+ 
+ ```",TRUE,addAll,-,https://github.com/stleary/JSON-java/commit/0d13e5606456f34d9b89e0756aad2bd55ea5b44d,,,,,,
+,"Add a new line:
+ 
+ ```java
+ 
+ this.myArrayList.ensureCapacity(this.myArrayList.size()+ collection.size());
+ 
+ ```",TRUE,addAll,-,https://github.com/stleary/JSON-java/commit/0d13e5606456f34d9b89e0756aad2bd55ea5b44d,,,,,,
+,"I think you missed this one. You got the one for the `addAll(Array)`, but not for `addAll(Collection)`",TRUE,addAll,src/main/java/org/json/JSONArray.java,https://github.com/stleary/JSON-java/commit/0d13e5606456f34d9b89e0756aad2bd55ea5b44d,,,,,,
+https://github.com/airbnb/plog/pull/103,`reopen` -> `open`,TRUE,openSocket,plog-client/src/main/java/com/airbnb/plog/client/PlogClient.java,https://github.com/airbnb/plog/commit/e19c1db7996a619ed951e1e638b084b06cd31b83,,,,,,
+,some default value for `chunkSize` would be helpful,TRUE,PlogClient,plog-client/src/main/java/com/airbnb/plog/client/PlogClient.java,https://github.com/airbnb/plog/commit/e19c1db7996a619ed951e1e638b084b06cd31b83,,,,,,
+,this is potentially quite verbose. use `trace` instead?,TRUE,sendToSocket,plog-client/src/main/java/com/airbnb/plog/client/PlogClient.java,https://github.com/airbnb/plog/commit/e19c1db7996a619ed951e1e638b084b06cd31b83,,,,,,
+,log an error message?,TRUE,sendToSocket,plog-client/src/main/java/com/airbnb/plog/client/PlogClient.java,https://github.com/airbnb/plog/commit/e19c1db7996a619ed951e1e638b084b06cd31b83,,,,,,
+,will a chunk size of `65507` be ok? This value does not take the Plog header size into account,TRUE,PlogClient,plog-client/src/main/java/com/airbnb/plog/client/PlogClient.java,https://github.com/airbnb/plog/commit/e19c1db7996a619ed951e1e638b084b06cd31b83,,,,,,
+,`socket` might be `null` if an exception was thrown in `sendToSocket` `catch` clause.,TRUE,close,plog-client/src/main/java/com/airbnb/plog/client/PlogClient.java,https://github.com/airbnb/plog/commit/e19c1db7996a619ed951e1e638b084b06cd31b83,,,,,,
+https://github.com/forcedotcom/wsc/pull/258,"Could you please call the constructor using this(null, null, false)?",TRUE,TypeMapper,src/main/java/com/sforce/ws/bind/TypeMapper.java,https://github.com/forcedotcom/wsc/commit/886b4803cbc0e8f79269ee90514008c6911b034c,,,,,,
+,What was the problem with #235? It seems like you would get the right typemapping when you call getXml/JavaMapping no?,TRUE,TypeMapper,src/main/java/com/sforce/ws/bind/TypeMapper.java,https://github.com/forcedotcom/wsc/commit/886b4803cbc0e8f79269ee90514008c6911b034c,,,,,,
+,That is such a subtle problem. Good catch.,TRUE,TypeMapper,src/main/java/com/sforce/ws/bind/TypeMapper.java,https://github.com/forcedotcom/wsc/commit/886b4803cbc0e8f79269ee90514008c6911b034c,,,,,,
+https://github.com/GluuFederation/oxAuth/pull/1369,"This method means that whole oxauth can process only one single CIBA request per given period of time. Imagine we code Authorization Code Flow in this way. We will get 1 request per second instead of hundreds. Yes, it's stable 1 req/s but we should handle many concurrently.
+ 
+ 
+ 
+ (Between, can you correct code formatter in your IDE to code that we already have? It would be easier to read and you will get less merging conflicts.)",TRUE,processImpl,-,https://github.com/GluuFederation/oxAuth/commit/84bb7213a0b2b447b6779fa0a593c5045ccb0846,,,,,,
+,"I meant that it should be multi-threaded, not single thread job as it is in the PR (means ten requests will be handled by same single thread). Again, think about Authorization Code Flow.",TRUE,processImpl,Server/src/main/java/org/gluu/oxauth/service/CibaRequestsProcessorJob.java,https://github.com/GluuFederation/oxAuth/commit/84bb7213a0b2b447b6779fa0a593c5045ccb0846,,,,,,
+,Just save it into persistence and grab by state. I think we already discussed it. Cache is bad here because you put key and then in other part you may not be able query it because you don't know key. Persistence allows to query data (while cache don't).,TRUE,createCIBAGrant,Server/src/main/java/org/gluu/oxauth/model/common/AuthorizationGrantList.java,https://github.com/GluuFederation/oxAuth/commit/84bb7213a0b2b447b6779fa0a593c5045ccb0846,,,,,,
+,"It will work good for single oxauth. In cluster it may work as:
+ 
+ 1) node1: req1, req2
+ 
+ 2) node2: req3, req4
+ 
+ And then when job run one node will grab all requests while the other node will do nothing. Thus question, should we introduce chunkSize here ? Configurable value by which we say how many requests to grab for processing.
+ 
+ 
+ 
+ And second question, according to this method expired request have CIBAGrant. It somehow looks strange that we created grant for request which is not authorized. Is it by design?",TRUE,processImpl,-,https://github.com/GluuFederation/oxAuth/commit/84bb7213a0b2b447b6779fa0a593c5045ccb0846,,,,,,
+https://github.com/dotCMS/core/pull/18428,"rename to 
+ 
+ ```
+ 
+ final Folder folder = 
+ 
+ ```",TRUE,setLinkDependencies,-,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,"rename to 
+ 
+ ```
+ 
+ final Host host
+ 
+ ```",TRUE,setLinkDependencies,-,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,set to final,TRUE,setLinkDependencies,dotCMS/src/main/java/com/dotcms/publisher/util/DependencyManager.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,"rename to
+ 
+ ```
+ 
+ final Container container
+ 
+ ```",TRUE,setContainerDependencies,-,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,"rename to 
+ 
+ ```
+ 
+ final Host host
+ 
+ ```",TRUE,setContainerDependencies,-,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,set to final,TRUE,setContainerDependencies,dotCMS/src/main/java/com/dotcms/publisher/util/DependencyManager.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,set to final,TRUE,setContainerDependencies,dotCMS/src/main/java/com/dotcms/publisher/util/DependencyManager.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,set to final,TRUE,setContainerDependencies,dotCMS/src/main/java/com/dotcms/publisher/util/DependencyManager.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,set to final,TRUE,setStructureDependencies,dotCMS/src/main/java/com/dotcms/publisher/util/DependencyManager.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,rename to bundle,TRUE,getBundleByMap,dotCMS/src/main/java/com/dotcms/publisher/util/PublisherUtil.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,you might replace this for user.isAdmin,TRUE,getFiltersDescriptorsByRole,dotCMS/src/main/java/com/dotcms/publishing/PublisherAPIImpl.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,"This could be refactored by
+ 
+ ```
+ 
+ return !UtilMethods.isSet(filterKey)?
+ 
+  this.loadedFilters.values().stream().filter(FilterDescriptor::isDefaultFilter()).findFirst().get():
+ 
+  this.loadedFilters.containsKey(filterKey)? this.loadedFilters.get(filterKey) : this.loadedFilters.values().stream().filter(FilterDescriptor::isDefaultFilter()).findFirst().get();
+ 
+  
+ 
+ ```
+ 
+ 
+ 
+ In addition you can create a method called getDefaultFilter, that basically returns this
+ 
+ ```
+ 
+  this.loadedFilters.values().stream().filter(FilterDescriptor::isDefaultFilter()).findFirst().get()
+ 
+ ```
+ 
+ 
+ 
+ And call such as this:
+ 
+ ```
+ 
+ return !UtilMethods.isSet(filterKey)?
+ 
+  this.getDefaultFilter():
+ 
+  this.loadedFilters.containsKey(filterKey)?
+ 
+  this.loadedFilters.get(filterKey) : this.getDefaultFilter();
+ 
+ ```",TRUE,getFilterDescriptorByKey,-,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,"I prefer to do this such as 
+ 
+ ```
+ 
+ List.class.cast(filterDescriptor.getFilters().get(""excludeClasses"")).stream().forEach(type -> publisherFilter.addTypeToExcludeClassesSet(type.toString()));
+ 
+ ```",TRUE,createPublisherFilter,-,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,"use the supplier version
+ 
+ ```
+ 
+ Logger.debug(PushPublishFiltersInitializer.class, ()-> "" dotcms filters files copied"");
+ 
+ ```",TRUE,init,-,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,Buffered it,TRUE,parse,dotCMS/src/main/java/com/dotcms/util/YamlUtil.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,"use StringPool.BLANK and i18n ""Filter""",TRUE,getParameters,dotCMS/src/main/java/com/dotmarketing/portlets/workflows/actionlet/PushNowActionlet.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,I would ask to the catalog if the filter_key does not exists on publishing_bundle to proceed,TRUE,forceRun,dotCMS/src/main/java/com/dotmarketing/startup/runonce/Task05305AddPushPublishFilterColumn.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,"I think here an alternative could be:
+ 
+ 1. Map the `List<Contentlet> contentlets` to a `List<String> contentletsIdentifiers` using stream().map 
+ 
+ 2. Add a method to the publisherFilter to `addAll` that takes a list of strings and pass list in 1. 
+ 
+ @freddyucv @jdotcms thoughts about this? 
+ 
+ If the guys thinks this can be better, please apply in the `if` above also",TRUE,createPublisherFilter,-,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,Why do not add all the contentlet to publisherFilter and then it take what it need from the contentlet later?,TRUE,createPublisherFilter,dotCMS/src/main/java/com/dotcms/publishing/PublisherAPIImpl.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+,I suggest that the internal map is not exposed but offer the methods you need via API (e.g. clearFileDescriptors()),TRUE,prepare,dotCMS/src/integration-test/java/com/dotcms/rest/api/v1/pushpublish/PushPublishFilterResourceTest.java,https://github.com/dotCMS/core/commit/d303d8ce23e694dae36c96f07e87151f2bef3f36,,,,,,
+https://github.com/graphstream/gs-core/pull/272,I wish there was a more gracious way to check for the renderer. Could we add an extra step that checks the `org.graphstream.ui` system property? If that last one is set to `org.graphstream.ui.javafx.util.Display` then we may conclude to use the `FX` rendered.,TRUE,outputNewImage,src/org/graphstream/stream/file/FileSinkImages.java,https://github.com/graphstream/gs-core/commit/3759fe499a53f778b09881353cbeacce9ffbd138,,,,,,
+https://github.com/spring-projects/spring-data-elasticsearch/pull/331,"We probably want to hold on to a reference of the mapping context (` MappingContext<? extends ElasticsearchPersistentEntity<?>, ElasticsearchPersistentProperty> mappingContext`) in the instance.",TRUE,createElasticsearchConverter,src/main/java/org/springframework/data/elasticsearch/core/AbstractElasticsearchTemplate.java,https://github.com/spring-projects/spring-data-elasticsearch/commit/5ac7efe4c1e39fafa3522e7ec45a338b07e01a6d,,,,,,
+https://github.com/fordfrog/apgdiff/pull/217,the majority of your changes are simply passing arguments all around the codebase,TRUE,dropFunctions,src/main/java/cz/startnet/utils/pgdiff/PgDiffFunctions.java,https://github.com/fordfrog/apgdiff/commit/96bde24f9c170a407fecf450adf02a1aa697d400,,,,,,
+https://github.com/cookpad/puree-android/pull/43,"Can we use a subquery, `DELETE FROM $table_name WHERE id IN (SELECT id FROM $table_name ORDER BY id DESC LIMIT $number_to_remove);` ? It might be faster than this PR.",TRUE,truncateBufferedLogs,puree/src/main/java/com/cookpad/puree/storage/PureeSQLiteStorage.java,https://github.com/cookpad/puree-android/commit/6bc159595104c9dbeb7ee470b37a755083f7c20c,,,,,,
+https://github.com/tommyschnabel/Reservations/pull/39,"You should probably do more than just print the stack trace if this fails. Returning null or something like that could tell us that something went wrong. Also, doing `System.out.println()` with a useful message would be good so we can see on the output what went wrong",TRUE,searchByDate,src/main/java/edu/spsu/swe3613/reservations/DefaultReservationsService.java,https://github.com/tommyschnabel/Reservations/commit/c3b3c8e7f3567ccb162be3d10c45223946a9d933,,,,,,
+,Holy spacing batman,TRUE,searchByDate,src/main/java/edu/spsu/swe3613/reservations/DefaultReservationsService.java,https://github.com/tommyschnabel/Reservations/commit/c3b3c8e7f3567ccb162be3d10c45223946a9d933,,,,,,
+,Same thing here with this catch block,TRUE,searchByTime,src/main/java/edu/spsu/swe3613/reservations/DefaultReservationsService.java,https://github.com/tommyschnabel/Reservations/commit/c3b3c8e7f3567ccb162be3d10c45223946a9d933,,,,,,
+,"Having to have the minute exactly right may be a bit much to expect. Maybe you could give flights around that time, or before or after that time. Also, if you want the results to be in a certain order you can just order your list and that's the order we'll get.",TRUE,searchByTime,src/main/java/edu/spsu/swe3613/reservations/DefaultReservationsService.java,https://github.com/tommyschnabel/Reservations/commit/c3b3c8e7f3567ccb162be3d10c45223946a9d933,,,,,,
+,Oh I didn't see this here before. Just make the other search methods private,TRUE,search,src/main/java/edu/spsu/swe3613/reservations/DefaultReservationsService.java,https://github.com/tommyschnabel/Reservations/commit/c3b3c8e7f3567ccb162be3d10c45223946a9d933,,,,,,
+,"This is good, we should have a default case that returns `null` though",TRUE,search,src/main/java/edu/spsu/swe3613/reservations/DefaultReservationsService.java,https://github.com/tommyschnabel/Reservations/commit/c3b3c8e7f3567ccb162be3d10c45223946a9d933,,,,,,
+,"Don't worry about it, but I think this whole method is indented one _tab_ too far",TRUE,searchByPrice,src/main/java/edu/spsu/swe3613/reservations/DefaultReservationsService.java,https://github.com/tommyschnabel/Reservations/commit/c3b3c8e7f3567ccb162be3d10c45223946a9d933,,,,,,
+https://github.com/DataBiosphere/consent-ontology/pull/70,"consider an alternate approach that removes the need for `TermResourceMinimalDeserializer` altogether. What if, instead of conditionally applying a json deserializer, you always use the full/built-in deserializer, but add one of these blocks here:
+ 
+ ```
+ 
+  if (thinFilter) {
+ 
+  List<TermResource> thinList = new ArrayList<TermResource>();
+ 
+  for (TermResource thick : termList) {
+ 
+  TermResource thin = new TermResource();
+ 
+  thin.setId(thick.id);
+ 
+  thin.setLabel(thick.label);
+ 
+  thin.setDefinition(thick.definition);
+ 
+  thin.setSynonyms(thick.synonyms);
+ 
+  thinList.add(thin);
+ 
+  }
+ 
+  termList = thinList;
+ 
+  }
+ 
+ ```
+ 
+ or even:
+ 
+ ```
+ 
+  if (thinFilter) {
+ 
+  for (TermResource thick : termList) {
+ 
+  thick.setParents(null);
+ 
+  thick.setOntology(null);
+ 
+  thick.setUsable(null);
+ 
+  }
+ 
+  }
+ 
+ ```
+ 
+ 
+ 
+ I am waffling on what is the best approach. Using a different deserializer is the most efficient at runtime, in that we only deserialize the fields we need from ES, and we don't create Java objects we won't use. However, managing deserializers is heavier on code maintenance, whereas massaging Java objects is probably more readable/accessible code.",TRUE,executeSearch,-,https://github.com/DataBiosphere/consent-ontology/commit/db781a3e9e34f74727f7ef19ef6f48ee5ccc9072,,,,,,
+,"yeah, honestly, I think the ObjectMapper approach is the more theoretically correct, but this approach is more readable and simpler - even if it's hacky.",TRUE,executeSearch,src/main/java/org/broadinstitute/dsde/consent/ontology/service/ElasticSearchAutocompleteAPI.java,https://github.com/DataBiosphere/consent-ontology/commit/db781a3e9e34f74727f7ef19ef6f48ee5ccc9072,,,,,,
+https://github.com/opennetworkinglab/flowvisor/pull/167,I think it makes more sense if the extra parameter was read from an FVClassifier rather than required at any OFSwitchAcceptor. It would also make the feature more like other config options than the classifier already supports.,FALSE,run,src/org/flowvisor/FlowVisor.java,https://github.com/opennetworkinglab/flowvisor/commit/866246580726328187d9f9c2e6297d0da62b54e8,,,,,,
+https://github.com/antlr/stringtemplate4/pull/235,"```suggestion
+ 
+  return (ModelAdaptor<? super T>) adaptors.get(attributeType);
+ 
+ ```",FALSE,getModelAdaptor,-,https://github.com/antlr/stringtemplate4/commit/200d2d1ea54d8131a20e95dc2a6131c5cfea5469,,,,,,
+https://github.com/ArpNetworking/metrics-portal/pull/92,The naming between `KairosQuery` (the result) and `MetricsQuery` (the request) needs to be clarified.,TRUE,queryMetrics,app/com/arpnetworking/kairos/client/KairosDbClient.java,https://github.com/ArpNetworking/metrics-portal/commit/4c5b8477560be3b2110040d930c0f2c9fb664797,,,,,,
+,Should return a `URI`; otherwise rename.,TRUE,fireRequest,app/com/arpnetworking/kairos/client/KairosDbClient.java,https://github.com/ArpNetworking/metrics-portal/commit/4c5b8477560be3b2110040d930c0f2c9fb664797,,,,,,
+,I would prefer these returned a `DateTime` to improve the model and instead used Jackson annotations to control the render format. Thoughts?,TRUE,startMillis,app/com/arpnetworking/kairos/client/models/MetricsQuery.java,https://github.com/ArpNetworking/metrics-portal/commit/4c5b8477560be3b2110040d930c0f2c9fb664797,,,,,,
+,ImmutableMap,TRUE,GroupBy,app/com/arpnetworking/kairos/client/models/MetricsQuery.java,https://github.com/ArpNetworking/metrics-portal/commit/4c5b8477560be3b2110040d930c0f2c9fb664797,,,,,,
+,ImmutableList,TRUE,getQueries,app/com/arpnetworking/kairos/client/models/MetricsQuery.java,https://github.com/ArpNetworking/metrics-portal/commit/4c5b8477560be3b2110040d930c0f2c9fb664797,,,,,,
+,ImmutableList,TRUE,QueryResult,app/com/arpnetworking/kairos/client/models/MetricsQuery.java,https://github.com/ArpNetworking/metrics-portal/commit/4c5b8477560be3b2110040d930c0f2c9fb664797,,,,,,
+,ImmutableList.of() (should also return ImmutableList),TRUE,DataPoint,app/com/arpnetworking/kairos/client/models/MetricsQueryResponse.java,https://github.com/ArpNetworking/metrics-portal/commit/4c5b8477560be3b2110040d930c0f2c9fb664797,,,,,,
+,You don't need to take a copy if it's already immutable.,TRUE,MetricsQuery,app/com/arpnetworking/kairos/client/models/MetricsQuery.java,https://github.com/ArpNetworking/metrics-portal/commit/4c5b8477560be3b2110040d930c0f2c9fb664797,,,,,,
+https://github.com/NWQMC/WQP-WQX-Services/pull/181,Profile.SUMMARY_STATION.toString() is also valid here.,TRUE,dataProfilePeriodOfRecord,src/main/java/gov/usgs/cida/wqp/swagger/SwaggerParameters.java,https://github.com/NWQMC/WQP-WQX-Services/commit/c3e945f17e1f2a40d9809873d4ec396e269e5a6e,,,,,,
+,This should have stayed camel case,TRUE,determineProfileTest,src/test/java/gov/usgs/cida/wqp/webservice/summary/SummaryStationControllerTest.java,https://github.com/NWQMC/WQP-WQX-Services/commit/c3e945f17e1f2a40d9809873d4ec396e269e5a6e,,,,,,
+https://github.com/apache/jmeter/pull/479,Would you please invert this `if` as well?,TRUE,compareTime,src/components/src/main/java/org/apache/jmeter/assertions/CompareAssertion.java,https://github.com/apache/jmeter/commit/be254346e9b6dd135a5036c67366cd343f5b03a3,,,,,,
+,Ah I thought you would just put `continue` and avoid extra indentation level,TRUE,compareTime,src/components/src/main/java/org/apache/jmeter/assertions/CompareAssertion.java,https://github.com/apache/jmeter/commit/be254346e9b6dd135a5036c67366cd343f5b03a3,,,,,,
+,I wonder if this should be `sResult` instead of the current `prevResult`.,TRUE,compareTime,src/components/src/main/java/org/apache/jmeter/assertions/CompareAssertion.java,https://github.com/apache/jmeter/commit/be254346e9b6dd135a5036c67366cd343f5b03a3,,,,,,
+,"This looks strange since `prevResult` is used below, and it is especially strange that there's a second assignment below: `prevResult = sResult`",TRUE,compareTime,src/components/src/main/java/org/apache/jmeter/assertions/CompareAssertion.java,https://github.com/apache/jmeter/commit/be254346e9b6dd135a5036c67366cd343f5b03a3,,,,,,
+,Same thing: I would prefer to move short if branches to the top and avoid `else` branches at the end of the code block,TRUE,compareContent,src/components/src/main/java/org/apache/jmeter/assertions/CompareAssertion.java,https://github.com/apache/jmeter/commit/be254346e9b6dd135a5036c67366cd343f5b03a3,,,,,,
+,"I think it should be `if (whatever) { shorter branch; } else { longer branch; }`
+ 
+ 
+ 
+ Of course, if `shorter branch` ends with `return` or `break` or `continue`, then `else` is not required, and it helps to minimize indentation level for `longer branch`
+ 
+ 
+ 
+ Of course that might depend on case-by-case basis, however most of the times it helps to put shorter fragments first, so the nesting is easier to identify.
+ 
+ 
+ 
+ On top of that, negated conditions are typically harder to understand, so the following would be so much better than the current code in `master`:
+ 
+ 
+ 
+ ```
+ 
+ if (success) {
+ 
+  prevResult = sResult;
+ 
+  prevTime = currentTime;
+ 
+  continue;
+ 
+ }
+ 
+ // Set failure message and stop the search
+ 
+ 
+ 
+ ...
+ 
+ break;
+ 
+ ```",TRUE,compareTime,-,https://github.com/apache/jmeter/commit/be254346e9b6dd135a5036c67366cd343f5b03a3,,,,,,
+,"```
+ 
+ ....
+ 
+ ...
+ 
+ break;
+ 
+ ```
+ 
+ 
+ 
+ is complicated in any case, so adding yet another nesting layer does not really help there.
+ 
+ 
+ 
+ Moving some of the code to a smaller method would clarify the intention much better than adding `else`.
+ 
+ 
+ 
+ You do touch that code, that is why I raise the concerns.
+ 
+ 100500 levels of `else` branches never help readability.",TRUE,compareTime,-,https://github.com/apache/jmeter/commit/be254346e9b6dd135a5036c67366cd343f5b03a3,,,,,,
+,I think the `-1` is used as a guard here to check whether `prevTime` has been assigned already in a previous loop.,TRUE,compareTime,src/components/src/main/java/org/apache/jmeter/assertions/CompareAssertion.java,https://github.com/apache/jmeter/commit/be254346e9b6dd135a5036c67366cd343f5b03a3,,,,,,
+,"I wonder, if it would help to change the code from checking for success to checking for failure. That way, we would get a naturally looking `if (failure) { markFailure(...); return }` instead of `break` or `continue`.",TRUE,compareTime,src/components/src/main/java/org/apache/jmeter/assertions/CompareAssertion.java,https://github.com/apache/jmeter/commit/be254346e9b6dd135a5036c67366cd343f5b03a3,,,,,,
+,"@vlsi Ok, now I have understood, what you meant here. I think it is an error and will correct it with my next commit that should close this PR.",TRUE,compareTime,src/components/src/main/java/org/apache/jmeter/assertions/CompareAssertion.java,https://github.com/apache/jmeter/commit/be254346e9b6dd135a5036c67366cd343f5b03a3,,,,,,
+https://github.com/SonarSource/sonar-php/pull/21,"![MAJOR](https://raw.githubusercontent.com/SonarCommunity/sonar-github/master/images/severity-major.png) Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'. [![rule](https://raw.githubusercontent.com/SonarCommunity/sonar-github/master/images/rule.png)](http://nemo.sonarqube.org/coding_rules#rule_key=squid%3AS00100)
+",True,TOP_STATEMENT,php-frontend/src/main/java/org/sonar/php/parser/NewPHPGrammar.java,https://github.com/SonarSource/sonar-php/commit/25b8b8c6b24c5ff2c943b13685a1414d1536c1c9,,,,,,
